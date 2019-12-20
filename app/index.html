@@ -12,7 +12,7 @@
 <body>
 <!-- Начало хедера -->
 <header id="header">
-	<div class="top-head">
+	<div class="top-head padding-container">
 	  <div class="container flex-container">
 		  <a class="logo-header">
 			  <img data-src="img/icons/zov-logo.png" class="lazy"  alt="logo-header">
@@ -31,14 +31,13 @@
 		  </div>
 		  <div class="top-header-menu-container">
 			  <ul class="top-header-menu flex-container">
-				  <li class="top-header-menu-item">
-					  <a href="#">О нас
+				  <li class="top-header-menu-item top-submenu-active">
+					  <a href="#">О нас</a>
 					  <ul class="top-header-submenu">
 						  <li class="top-header-submenu-item">
 								  Тест
 						  </li>
 					  </ul>
-					  </a>
 				  </li>
 				  <li class="top-header-menu-item"><a href="#">Акции</a></li>
 				  <li class="top-header-menu-item"><a href="#">Написать директору</a></li>
@@ -46,58 +45,61 @@
 		  </div>
 	  </div>
 	</div>
-	<div class="container flex-container bottom-header">
-		<button class="bottom-header-lead-toggle">Заяка на дизайн и расчёт</button>
-		<form action="" class="search-form-header">
-			<input type="text" class="search-form-header__text">
-			<input type="submit" class="search-form-header__search icofont-search-1">
-		</form>
-		<ul class="bottom-header-advantages">
-			<li class="bottom-header-advantages-item">Наши работы<span class="col-advantages">1571</span></li>
-			<li class="bottom-header-advantages-item">Распродажа образцов<span class="col-advantages">32</span></li>
-			<li class="bottom-header-advantages-item">Салоны продаж<span class="col-advantages">23</span></li>
-		</ul>
-		<div class="bottom-header-cat-container">
-			<button class="toogle-cat">
-				<span class="toogle-cat-des"></span>
-				<span class="toogle-cat-des"></span>
-				<span class="toogle-cat-des"></span>
-			</button>
-			<span>Каталог зов</span>
-			<ul class="bottom-header-cat-menu">
-				<li class="bottom-header-cat-menu-item"><a href="#">Тест</a></li>
-				<li class="bottom-header-cat-menu-item"><a href="#">Тест</a></li>
-				<li class="bottom-header-cat-menu-item"><a href="#">Тест</a></li>
-			</ul>
+	<div class="bottom-header padding-container">
+		<div class="container flex-container">
+			<div class="bottom-header-item flex-container">
+				<button class="bottom-header-lead-toggle">Заяка на дизайн и расчёт</button>
+				<form action="" class="search-form-header">
+					<button class="fas fa-search search-button"></button>
+					<input type="search"  class="fas fa-search search-form-header__search">
+				</form>
+			</div>
+			<div class="bottom-header-item flex-container">
+				<ul class="bottom-header-advantages flex-container">
+					<li class="bottom-header-advantages-item">Наши работы<span class="col-advantages">1571</span></li>
+					<li class="bottom-header-advantages-item">Распродажа образцов<span class="col-advantages">32</span></li>
+					<li class="bottom-header-advantages-item">Салоны продаж<span class="col-advantages">23</span></li>
+				</ul>
+				<div class="bottom-header-cat-container">
+					<button class="toggle-cat fas fa-bars"></button>
+					<span>Каталог зов</span>
+					<ul class="bottom-header-cat-menu">
+						<li class="bottom-header-cat-menu-item"><a href="#">Тест</a>
+							<ul class="bottom-header-cat-submenu">
+								<li class="bottom-header-cat-submenu-item">Тест</li>
+								<li class="bottom-header-cat-submenu-item">Тест</li>
+								<li class="bottom-header-cat-submenu-item">Тест</li>
+							</ul></li>
+						<li class="bottom-header-cat-menu-item"><a href="#">Тест</a></li>
+						<li class="bottom-header-cat-menu-item"><a href="#">Тест</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
-</header>
-<!-- Конец хедера -->
-<!-- Начало главного блока -->
-<main id="main">
-	<section class="main-banner">
+	<section class="main-banner padding-container">
 		<a href="#" class="banner-sales-btn">Акции</a>
 		<div class="container">
 			<div class="main-banner-top">
 				<h4 class="subtitle">ОФИЦИАЛЬНЫЙ САЙТ ПРЕДСТАВИТЕЛЯ</h4>
 				<h1 class="title">Фабрики ЗОВ в Москве</h1>
-				<a href="" class="btn btn-more">Выбрать кухню  <i class="icofont-long-arrow-right"></i></a>
+				<a href="" class="btn btn-more">Выбрать кухню  <i class="fas fa-arrow-right"></i></a>
 			</div>
 			<ul class="main-banner-list">
-				<li class="main-banner-list-item">
+				<li class="main-banner-list-item active">
 					<a href="#">
 						<div class="main-banner-list-top">
-							<span class="main-banner-text-dec">01</span> <div class="main-banner-dec">&#9658;</div>
+							<span class="main-banner-text-dec">01</span>
 						</div>
 						<div class="main-banner-list-bottom">
 							Заказать дизайн проект
 						</div>
-				    </a>
+					</a>
 				</li>
 				<li class="main-banner-list-item">
 					<a href="#">
 						<div class="main-banner-list-top">
-							<span class="main-banner-text-dec">02</span> <div class="main-banner-dec">&#9658;</div>
+							<span class="main-banner-text-dec">02</span>
 						</div>
 						<div class="main-banner-list-bottom">
 							Вызвать замерщика
@@ -107,7 +109,7 @@
 				<li class="main-banner-list-item">
 					<a href="#">
 						<div class="main-banner-list-top">
-							<span class="main-banner-text-dec">03</span> <div class="main-banner-dec">&#9658;</div>
+							<span class="main-banner-text-dec">03</span>
 						</div>
 						<div class="main-banner-list-bottom">
 							Вызвать дизайнера
@@ -117,7 +119,7 @@
 				<li class="main-banner-list-item">
 					<a href="#">
 						<div class="main-banner-list-top">
-							<span class="main-banner-text-dec">04</span> <div class="main-banner-dec">&#9658;</div>
+							<span class="main-banner-text-dec">04</span>
 						</div>
 						<div class="main-banner-list-bottom">
 							ONLINE расчет проекта
@@ -127,208 +129,233 @@
 			</ul>
 		</div>
 	</section>
-	<ul class="flex-container container main-advantages-list">
-		<li class="main-advantages-item">
-			<img data-src="img/icons/advantages-1.png" alt="advantages" class="lazy main-advantages-img">
-			<h5 class="main-advantages-title">Скидка до 50%</h5>
-			<p class="main-advantages-text">На выставочные образцы
-				в наших салонах.</p>
-		</li>
-		<li class="main-advantages-item">
-			<img data-src="img/icons/advantages-2.png" alt="advantages" class="lazy main-advantages-img">
-			<h5 class="main-advantages-title">Проконсультируем вас</h5>
-			<p class="main-advantages-text">По всем вопросам связанными
-				с покупкой кухни.</p>
-		</li>
-		<li class="main-advantages-item">
-			<img data-src="img/icons/advantages-3.png" alt="advantages" class="lazy main-advantages-img">
-			<h5 class="main-advantages-title">Доставка и сборка</h5>
-			<p class="main-advantages-text">В любой точке Москвы и
-				Московской области</p>
-		</li>
-		<li class="main-advantages-item">
-			<img data-src="img/icons/advantages-4.png" alt="advantages" class="lazy main-advantages-img">
-			<h5 class="main-advantages-title">Следим за ценами</h5>
-			<p class="main-advantages-text">Наших конкурентов и делаем
-				лучшее предложение для Вас!</p>
-		</li>
-		<li class="main-advantages-item">
-			<img data-src="img/icons/advantages-5.png" alt="advantages" class="lazy main-advantages-img">
-			<h5 class="main-advantages-title">Купить кухню просто</h5>
-			<p class="main-advantages-text">Мы максимально упрощаем
-				процесс покупки кухни.</p>
-		</li>
-		<li class="main-advantages-item">
-			<img data-src="img/icons/advantages-6.png" alt="advantages" class="lazy main-advantages-img">
-			<h5 class="main-advantages-title">Достойное качество</h5>
-			<p class="main-advantages-text">На весь реализуемый
-				нами товар</p>
-		</li>
-	</ul>
-	<div class="container flex-container main-about-us">
-		<div class="main-about-us-item">
-			<h5 class="main-about-us-dec-title">коротко про нас <span class="main-about-us-dec"></span></h5>
-			<div class="main-about-us-container">
-				<div class="main-about-us-subcontainer">
-					<h4 class="main-about-us-title">25 Лет
-						На рынке</h4>
+</header>
+<!-- Конец хедера -->
+<!-- Начало главного блока -->
+<main id="main">
+	<div class="main-advantages container">
+		<ul class="flex-container main-advantages-list padding-container">
+			<li class="main-advantages-item">
+				<div class="main-advantages-img">
+					<img data-src="img/icons/advantages-1.png" alt="advantages" class="lazy">
+				</div>
+				<h5 class="main-advantages-title">Скидка до 50%</h5>
+				<p class="main-advantages-text">На выставочные образцы
+					в наших салонах.</p>
+			</li>
+			<li class="main-advantages-item">
+				<div class="main-advantages-img">
+				  <img data-src="img/icons/advantages-2.png" alt="advantages" class="lazy">
+				</div>
+				<h5 class="main-advantages-title">Проконсультируем вас</h5>
+				<p class="main-advantages-text">По всем вопросам связанными
+					с покупкой кухни.</p>
+			</li>
+			<li class="main-advantages-item">
+				<div class="main-advantages-img">
+				  <img data-src="img/icons/advantages-3.png" alt="advantages" class="lazy">
+				</div>
+				<h5 class="main-advantages-title">Доставка и сборка</h5>
+				<p class="main-advantages-text">В любой точке Москвы и
+					Московской области</p>
+			</li>
+			<li class="main-advantages-item">
+				<div class="main-advantages-img">
+				  <img data-src="img/icons/advantages-4.png" alt="advantages" class="lazy">
+				</div>
+				<h5 class="main-advantages-title">Следим за ценами</h5>
+				<p class="main-advantages-text">Наших конкурентов и делаем
+					лучшее предложение для Вас!</p>
+			</li>
+			<li class="main-advantages-item">
+				<div class="main-advantages-img">
+				  <img data-src="img/icons/advantages-5.png" alt="advantages" class="lazy">
+				</div>
+				<h5 class="main-advantages-title">Купить кухню просто</h5>
+				<p class="main-advantages-text">Мы максимально упрощаем
+					процесс покупки кухни.</p>
+			</li>
+			<li class="main-advantages-item">
+				<div class="main-advantages-img">
+				   <img data-src="img/icons/advantages-6.png" alt="advantages" class="lazy">
+				</div>
+				<h5 class="main-advantages-title">Достойное качество</h5>
+				<p class="main-advantages-text">На весь реализуемый
+					нами товар</p>
+			</li>
+		</ul>
+	</div>
+	<div class="main-about-us padding-container">
+		<div class="container flex-container">
+			<div class="main-about-us-item flex-container">
+				<h5 class="main-about-us-dec-title">коротко про нас <span class="main-about-us-dec"></span></h5>
+				<div class="main-about-us-container">
+					<div class="main-about-us-subcontainer">
+						<h4 class="main-about-us-title">25 Лет <br> На рынке</h4>
+					</div>
+				</div>
+			</div>
+			<div class="main-about-us-item">
+				<h4 class="subtitle">Коротко про нас</h4>
+				<h2 class="title">Кухни ЗОВ официальный сайт представителя в Москве</h2>
+				<p class="main-about-us-text">Очень популярные сегодня кухни ЗОВ производит Беларусь. Территориальная близость этой страны к нам и использование собственных материалов, позволяет сделать эти кухни недорогими. Кроме того, такие гарнитуры имеют отличное качество, благодаря отлаженной схеме производства и внимательному контролю. Немаловажным критерием, влияющим на популярность данной мебели в нашей стране, является богатство выбора. Здесь вы найдете как надежные классические варианты из массива разных пород дерева, так и модные современные гарнитуры из пластика и стружечных плит в широком ассортименте цветов и фактур. У нас можно недорого купить кухни из Белоруссии ЗОВ в опт и розницу.</p>
+				<a href="#" class="more">Читать подробнее <i class="fas fa-arrow-right"></i></a>
+			</div>
+		</div>
+	</div>
+	<section class="main-our-categories padding-container">
+		<div class="container">
+			<h2 class="title">Наши категории</h2>
+			<p class="main-our-categories-text">Find a bright ideal to suit your taste with our great selection of suspension, wall, floor and table lights.</p>
+			<ul class="flex-container main-our-categories-list">
+				<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/1-1000x593-(1)12.jpg')">
+					<a href="#">
+						<span class="categories-list-subtitle">Каталог</span>
+						<span class="categories-list-title">Массив</span>
+					</a>
+				</li>
+				<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/1-1000x667.jpg')">
+					<a href="#">
+						<span class="categories-list-subtitle">Каталог</span>
+						<span class="categories-list-title">МДФ</span>
+					</a>
+				</li>
+				<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/plastik15.jpg')">
+					<a href="#">
+						<span class="categories-list-subtitle">Каталог</span>
+						<span class="categories-list-title">Пластик</span>
+					</a>
+				</li>
+				<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/Слой_3.jpg')">
+					<a href="#">
+						<span class="categories-list-subtitle">Каталог</span>
+						<span class="categories-list-title">Акрил</span>
+					</a>
+				</li>
+				<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/1196802395_w640_h640_kuhni-iz-naturalnogo.jpg')">
+					<a href="#">
+						<span class="categories-list-subtitle">Каталог</span>
+						<span class="categories-list-title">Шпон</span>
+					</a>
+				</li>
+				<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/Слой_4.jpg')">
+					<a href="#">
+						<span class="categories-list-subtitle">Каталог</span>
+						<span class="categories-list-title">Эмаль</span>
+					</a>
+				</li>
+				<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/viber_image_mediastart_23.02.jpg')">
+					<a href="#">
+						<span class="categories-list-subtitle">Каталог</span>
+						<span class="categories-list-title">Корпусная мебель</span>
+					</a>
+				</li>
+				<li class="lazy main-our-categories-list-item">
+					<a href="#">
+						<span  class="more">Читать подробнее <i class="fas fa-arrow-right"></i></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="main-our-categories popular-items-container">
+		<div class="container">
+			<h2 class="title">Популярные товары</h2>
+			<p class="main-our-categories-text">Find a bright ideal to suit your taste with our great selection of suspension, wall, floor and table lights.</p>
+			<ul class="flex-container main-our-categories-list">
+				<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/1-1000x593-(1)12.jpg')">
+					<a href="#">
+					</a>
+					<h4 class="main-our-categories-title">Кухня из МДФ Акрил матовый/ Структурная ЛДСП</h4>
+				</li>
+				<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/1-1000x667.jpg')">
+					<a href="#">
+					</a>
+					<h4 class="main-our-categories-title">Кухня из шпона ясеня Т222 «Норд» </h4>
+				</li>
+				<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/plastik15.jpg')">
+					<a href="#">
+					</a>
+					<h4 class="main-our-categories-title">Кухня из Акрила / ЛДСП «Берне»</h4>
+				</li>
+				<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/Слой_3.jpg')">
+					<a href="#">
+					</a>
+					<h4 class="main-our-categories-title">Кухня из МДФ Крашеного / ЛДСП «Нойс»</h4>
+				</li>
+				<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/1196802395_w640_h640_kuhni-iz-naturalnogo.jpg')">
+					<a href="#">
+					</a>
+					<h4 class="main-our-categories-title">Кухня из МДФ Акрил матовый/ Структурная ЛДСП</h4>
+				</li>
+				<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/Слой_4.jpg')">
+					<a href="#">
+					</a>
+					<h4 class="main-our-categories-title">Кухня из шпона ясеня Т222 «Норд» </h4>
+				</li>
+				<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/viber_image_mediastart_23.02.jpg')">
+					<a href="#">
+					</a>
+					<h4 class="main-our-categories-title">Кухня из Акрила / ЛДСП «Берне»</h4>
+				</li>
+				<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/1-1000x593-(1)12.jpg')">
+					<a href="#">
+					</a>
+					<h4 class="main-our-categories-title">Кухня из МДФ Крашеного / ЛДСП «Нойс»</h4>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<div class="more-info padding-container">
+		<div class="container flex-container">
+			<h3 class="more-info-title-dec">factory</h3>
+			<div class="flex-container more-info-container">
+				<div class="more-info-item">
+					<a href="#"  class="more">Наши реализованные проекты  <i class="fas fa-arrow-right"></i></a>
+				</div>
+				<div class="more-info-item">
+					<h3 class="more-info-title">Дополнительная <br> информация</h3>
+					<h4 class="more-info-subtitle">01.  Официальные магазины фабрики</h4>
+					<p class="more-info-text">
+						Мы являемся официальным представителем фабрики
+						ЗОВ в Москве. Наш магазины неоднократно были
+						<u>посещены директором фабрики</u>.
+					</p>
+					<strong>Обязательно проверяйте следующие моменты:</strong>
+					<ul class="more-info-list">
+						<li class="more-info-list-item">Наличие официального сертификата с подписью
+							<br> директора фабрики
+						</li>
+						<li class="more-info-list-item">Наличие торговых точек на официальном сайте
+							<br>фабрики.</li>
+						<li class="more-info-list-item">На готовой кухне проверить отличительные
+							<br>знаки</li>
+					</ul>
+				</div>
+				<div class="more-info-item">
+					<div class="more-info-empty"></div>
+					<h4 class="more-info-subtitle">02.  Полезные услуги</h4>
+					<p class="more-info-text">
+						Мы стараемся максимально упростить процесс покупки
+						кухни. Все услуги мы сделали абсолютно бесплатными
+						при условии заказа кухни!
+					</p>
+					<strong>Для Вас мы ввели следующие услуги, которые позволят
+						сократить Ваше время:</strong>
+					<ul class="more-info-list">
+						<li class="more-info-list-item"><u>Онлайн просчет стоимости</u>
+						</li>
+						<li class="more-info-list-item"><u>Выезд дизайнера к Вам домой</u></li>
+						<li class="more-info-list-item"><u>Заказать замер помещения</u></li>
+					</ul>
 				</div>
 			</div>
 		</div>
-		<div class="main-about-us-item">
-			<h4 class="subtitle">Коротко про нас</h4>
-			<h2 class="title">Кухни ЗОВ официальный сайт представителя в Москве</h2>
-			<p class="main-about-us-text">Очень популярные сегодня кухни ЗОВ производит Беларусь. Территориальная близость этой страны к нам и использование собственных материалов, позволяет сделать эти кухни недорогими. Кроме того, такие гарнитуры имеют отличное качество, благодаря отлаженной схеме производства и внимательному контролю. Немаловажным критерием, влияющим на популярность данной мебели в нашей стране, является богатство выбора. Здесь вы найдете как надежные классические варианты из массива разных пород дерева, так и модные современные гарнитуры из пластика и стружечных плит в широком ассортименте цветов и фактур. У нас можно недорого купить кухни из Белоруссии ЗОВ в опт и розницу.</p>
-			<a href="#" class="more">Читать подробнее <i class="icofont-arrow-right"></i></a>
-		</div>
-	</div>
-	<section class="container main-our-categories">
-		<h2 class="title">Наши категории</h2>
-		<p class="main-our-categories-text">Find a bright ideal to suit your taste with our great selection of suspension, wall, floor and table lights.</p>
-		<ul class="flex-container main-our-categories-list">
-			<li class="main-our-categories-list-item">
-				<a href="#">
-					<span class="categories-list-subtitle">Каталог</span>
-					<span class="categories-list-subtitle">Массив</span>
-				</a>
-			</li>
-			<li class="main-our-categories-list-item">
-				<a href="#">
-					<span class="categories-list-subtitle">Каталог</span>
-					<span class="categories-list-subtitle">МДФ</span>
-				</a>
-			</li>
-			<li class="main-our-categories-list-item">
-				<a href="#">
-					<span class="categories-list-subtitle">Каталог</span>
-					<span class="categories-list-subtitle">Пластик</span>
-				</a>
-			</li>
-			<li class="main-our-categories-list-item">
-				<a href="#">
-					<span class="categories-list-subtitle">Каталог</span>
-					<span class="categories-list-subtitle">Акрил</span>
-				</a>
-			</li>
-			<li class="main-our-categories-list-item">
-				<a href="#">
-					<span class="categories-list-subtitle">Каталог</span>
-					<span class="categories-list-subtitle">Шпон</span>
-				</a>
-			</li>
-			<li class="main-our-categories-list-item">
-				<a href="#">
-					<span class="categories-list-subtitle">Каталог</span>
-					<span class="categories-list-subtitle">Эмаль</span>
-				</a>
-			</li>
-			<li class="main-our-categories-list-item">
-				<a href="#">
-					<span class="categories-list-subtitle">Каталог</span>
-					<span class="categories-list-subtitle">Корпусная мебель</span>
-				</a>
-			</li>
-			<li class="main-our-categories-list-item">
-				<a href="#">
-					<span class="more">Посмотреть все кухни   <i class="icofont-arrow-right"></i></span>
-				</a>
-			</li>
-		</ul>
-	</section>
-	<section class="container main-our-categories">
-		<h2 class="title">Популярные товары</h2>
-		<p class="main-our-categories-text">Find a bright ideal to suit your taste with our great selection of suspension, wall, floor and table lights.</p>
-		<ul class="flex-container main-our-categories-list">
-			<li class="main-our-categories-list-item">
-				<a href="#">
-				</a>
-				<h4 class="main-out-categories-title">Кухня из МДФ Акрил матовый/ Структурная ЛДСП</h4>
-			</li>
-			<li class="main-our-categories-list-item">
-				<a href="#">
-				</a>
-				<h4 class="main-out-categories-title">Кухня из шпона ясеня Т222 «Норд» </h4>
-			</li>
-			<li class="main-our-categories-list-item">
-				<a href="#">
-				</a>
-				<h4 class="main-out-categories-title">Кухня из Акрила / ЛДСП «Берне»</h4>
-			</li>
-			<li class="main-our-categories-list-item">
-				<a href="#">
-				</a>
-				<h4 class="main-out-categories-title">Кухня из МДФ Крашеного / ЛДСП «Нойс»</h4>
-			</li>
-			<li class="main-our-categories-list-item">
-				<a href="#">
-				</a>
-				<h4 class="main-out-categories-title">Кухня из МДФ Акрил матовый/ Структурная ЛДСП</h4>
-			</li>
-			<li class="main-our-categories-list-item">
-				<a href="#">
-				</a>
-				<h4 class="main-out-categories-title">Кухня из шпона ясеня Т222 «Норд» </h4>
-			</li>
-			<li class="main-our-categories-list-item">
-				<a href="#">
-				</a>
-				<h4 class="main-out-categories-title">Кухня из Акрила / ЛДСП «Берне»</h4>
-			</li>
-			<li class="main-our-categories-list-item">
-				<a href="#">
-				</a>
-				<h4 class="main-out-categories-title">Кухня из МДФ Крашеного / ЛДСП «Нойс»</h4>
-			</li>
-		</ul>
-	</section>
-	<div class="container flex-container more-info">
-		<h3 class="more-info-title-dec">factory</h3>
-		<div class="flex-container more-info-container">
-			<div class="more-info-item">
-				<a href="#" class="more">Наши реализованные проекты <i class="icofont-arrow-right"></i></a>
-			</div>
-			<div class="more-info-item">
-				<h3 class="more-info-title">Дополнительная
-					информация</h3>
-				<h4 class="more-info-subtitle">01.  Официальные магазины фабрики</h4>
-				<p class="more-info-text">
-					Мы являемся официальным представителем фабрики
-					ЗОВ в Москве. Наш магазины неоднократно были
-					<u>посещены директором фабрики</u>.
-				</p>
-				<strong>Обязательно проверяйте следующие моменты:</strong>
-				<ul class="more-info-list">
-					<li class="more-info-list-item">Наличие официального сертификата с подписью
-						директора фабрики
-					</li>
-					<li class="more-info-list-item">Наличие торговых точек на официальном сайте
-						фабрики.</li>
-					<li class="more-info-list-item">На готовой кухне проверить отличительные
-						знаки</li>
-				</ul>
-			</div>
-			<div class="more-info-item">
-				<h4 class="more-info-subtitle">02.  Полезные услуги</h4>
-				<p class="more-info-text">
-					Мы стараемся максимально упростить процесс покупки
-					кухни. Все услуги мы сделали абсолютно бесплатными
-					при условии заказа кухни!
-				</p>
-				<strong>Для Вас мы ввели следующие услуги, которые позволят
-					сократить Ваше время:</strong>
-				<ul class="more-info-list">
-					<li class="more-info-list-item"><u>Онлайн просчет стоимости</u>
-					</li>
-					<li class="more-info-list-item"><u>Выезд дизайнера к Вам домой</u></li>
-					<li class="more-info-list-item"><u>Заказать замер помещения</u></li>
-				</ul>
-			</div>
-		</div>	
 	</div>
 </main>
 <!-- Конец главного блока -->
 <!-- Начало футера -->
-<footer id="footer">
+<footer id="footer" class="padding-container">
   <div class="container flex-container">
 	  <div class="footer-item">
 		  <a href="#" class="footer-logo"><img data-src="img/icons/footer-logo.png" class="lazy" alt="footer"></a>
@@ -362,11 +389,11 @@
 	  </div>
 	  <div class="footer-item">
 		  <ul class="contacts">
+			  <li class="contacts-item"><i class="fas fa-phone-alt"></i><span class="footer-contacts-text">Телефон:</span><a href="tel:88005002239"> 8-800-500-22-39</a></li>
 			  <li class="contacts-item"><i class="fas fa-power-off"></i><span class="footer-contacts-text">Время работы:</span> Mon-Fri 08:00 - 18:00</li>
 			  <li class="contacts-item"><i class="fas fa-envelope"></i><span class="footer-contacts-text">Email: </span><a href="mailto:info@zovrus.ru">info@zovrus.ru</a></li>
-			  <li class="contacts-item"><i class="fas fa-phone-alt"></i><span class="footer-contacts-text">Телефон:</span><a href="tel:88005002239"> 8-800-500-22-39</a></li>
 		  </ul>
-		  <p>Все материалы, размещенные на сайте, не являются публичной офертой, и предоставлены в информационно-рекламных целях.</p>
+		  <p class="footer-info">Все материалы, размещенные на сайте, не являются публичной офертой, и предоставлены в информационно-рекламных целях.</p>
 		  <a href="#" class="politic-more">Политика конфеденциальности</a>
 	  </div>
   </div>
