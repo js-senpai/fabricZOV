@@ -12,6 +12,35 @@
 <body>
 <!-- Начало хедера -->
 <header id="header">
+	<div class="mobile-header padding-container">
+		<div class="container flex-container">
+			<div class="mobile-header-item">
+				<a class="logo-header">
+					<img data-src="img/icons/footer-logo.png" class="lazy"  alt="logo-header">
+				</a>
+			</div>
+			<div class="mobile-header-item">
+				<h3 class="mobile-title">Мебель для жизни</h3>
+			</div>
+			<div class="mobile-header-item flex-container">
+				<a href="tel:88005002239" class="mobile-tel fas fa-phone-alt mobile-tel"></a>
+				<button class="fas fa-search search-button"></button>
+				<button class="mobile-toggle-cat fas fa-bars"></button>
+			</div>
+		</div>
+		<ul class="mobile-header-nav">
+			<li class="mobile-header-nav-item"><a href="#">Категория <i class="fas fa-angle-down"></i></a>
+				<ul class="mobile-header-submenu">
+					<li class="mobile-header-submenu-item"><a href="#">Категория</a></li>
+					<li class="mobile-header-submenu-item"><a href="#">Категория</a></li>
+					<li class="mobile-header-submenu-item"><a href="#">Категория</a></li>
+				</ul>
+			</li>
+			<li class="mobile-header-nav-item"><a href="#">Категория</a></li>
+			<li class="mobile-header-nav-item"><a href="#">Категория</a></li>
+			<li class="mobile-header-nav-item"><a href="#">Категория</a></li>
+		</ul>
+	</div>
 	<div class="top-head padding-container">
 	  <div class="container flex-container">
 		  <a class="logo-header">
@@ -49,10 +78,9 @@
 		<div class="container flex-container">
 			<div class="bottom-header-item flex-container">
 				<button class="bottom-header-lead-toggle">Заяка на дизайн и расчёт</button>
-				<form action="" class="search-form-header">
+				<div  class="search-form-header">
 					<button class="fas fa-search search-button"></button>
-					<input type="search"  class="fas fa-search search-form-header__search">
-				</form>
+				</div>
 			</div>
 			<div class="bottom-header-item flex-container">
 				<ul class="bottom-header-advantages flex-container">
@@ -64,7 +92,9 @@
 					<button class="toggle-cat fas fa-bars"></button>
 					<span>Каталог зов</span>
 					<ul class="bottom-header-cat-menu">
-						<li class="bottom-header-cat-menu-item"><a href="#">Тест</a>
+						<li class="bottom-header-cat-menu-item">
+							<i class="fas fa-angle-left"></i>
+							<a href="#">Тест</a>
 							<ul class="bottom-header-cat-submenu">
 								<li class="bottom-header-cat-submenu-item">Тест</li>
 								<li class="bottom-header-cat-submenu-item">Тест</li>
@@ -77,15 +107,16 @@
 			</div>
 		</div>
 	</div>
-	<section class="main-banner padding-container">
+	<section class="main-banner">
 		<a href="#" class="banner-sales-btn">Акции</a>
 		<div class="container">
-			<div class="main-banner-top">
+			<div class="main-banner-top padding-container">
 				<h4 class="subtitle">ОФИЦИАЛЬНЫЙ САЙТ ПРЕДСТАВИТЕЛЯ</h4>
 				<h1 class="title">Фабрики ЗОВ в Москве</h1>
+				<a href="#" class="mobile-sales-btn">Акции</a>
 				<a href="" class="btn btn-more">Выбрать кухню  <i class="fas fa-arrow-right"></i></a>
 			</div>
-			<ul class="main-banner-list">
+			<ul class="main-banner-list padding-container">
 				<li class="main-banner-list-item active">
 					<a href="#">
 						<div class="main-banner-list-top">
@@ -133,6 +164,23 @@
 <!-- Конец хедера -->
 <!-- Начало главного блока -->
 <main id="main">
+	<ul class="mobile-main-banners">
+		<li class="lazy mobile-main-banners-item" data-bg="url('img/_src/body/main/1-layers.png')"><a class="padding-container" href="#">
+			<span class="mobile-main-banners-title">Белорусские кухни
+             <br>5 лет гарантии</span>
+			<span class="more">Выбрать кухню  <i class="fas fa-arrow-right"></i></span>
+		</a></li>
+		<li class="lazy mobile-main-banners-item" data-bg="url('img/_src/body/main/3-layers.png')"><a class="padding-container" href="#">
+			<span class="mobile-main-banners-title">Посудомоечная машина
+            <br> в подарок</span>
+			<span class="more" style="visibility: hidden;">Выбрать кухню <i class="fas fa-arrow-right"></i></span>
+		</a></li>
+		<li class="lazy mobile-main-banners-item" data-bg="url('img/_src/body/main/2-layers.png')"><a class="padding-container" href="#">
+			<span class="mobile-main-banners-title">Только до 31 октября:
+            <br> Скидка 45% на кухни месяца!</span>
+			<span class="more">Записаться на ацию  <i class="fas fa-arrow-right"></i></span>
+		</a></li>
+	</ul>
 	<div class="main-advantages container">
 		<ul class="flex-container main-advantages-list padding-container">
 			<li class="main-advantages-item">
@@ -185,11 +233,11 @@
 			</li>
 		</ul>
 	</div>
-	<div class="main-about-us padding-container">
+	<div class="main-about-us">
 		<div class="container flex-container">
 			<div class="main-about-us-item flex-container">
-				<h5 class="main-about-us-dec-title">коротко про нас <span class="main-about-us-dec"></span></h5>
-				<div class="main-about-us-container">
+				<h5 class="main-about-us-dec-title padding-container">коротко про нас <span class="main-about-us-dec"></span></h5>
+				<div class="main-about-us-container padding-container">
 					<div class="main-about-us-subcontainer">
 						<h4 class="main-about-us-title">25 Лет <br> На рынке</h4>
 					</div>
@@ -207,7 +255,7 @@
 		<div class="container">
 			<h2 class="title">Наши категории</h2>
 			<p class="main-our-categories-text">Find a bright ideal to suit your taste with our great selection of suspension, wall, floor and table lights.</p>
-			<ul class="flex-container main-our-categories-list">
+			<ul class="flex-container main-our-categories-list our-categories">
 				<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/1-1000x593-(1)12.jpg')">
 					<a href="#">
 						<span class="categories-list-subtitle">Каталог</span>
@@ -252,13 +300,60 @@
 				</li>
 				<li class="lazy main-our-categories-list-item">
 					<a href="#">
-						<span  class="more">Читать подробнее <i class="fas fa-arrow-right"></i></span>
+						<span  class="more">Посмотреть все кухни   <i class="fas fa-arrow-right"></i></span>
 					</a>
 				</li>
 			</ul>
+			<div class="mobile-main-our-categories">
+				<ul class="mobile-main-our-categories-list owl-carousel">
+					<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/1-1000x593-(1)12.jpg')">
+						<a href="#">
+							<span class="categories-list-subtitle">Каталог</span>
+							<span class="categories-list-title">Массив</span>
+						</a>
+					</li>
+					<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/1-1000x667.jpg')">
+						<a href="#">
+							<span class="categories-list-subtitle">Каталог</span>
+							<span class="categories-list-title">МДФ</span>
+						</a>
+					</li>
+					<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/plastik15.jpg')">
+						<a href="#">
+							<span class="categories-list-subtitle">Каталог</span>
+							<span class="categories-list-title">Пластик</span>
+						</a>
+					</li>
+					<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/Слой_3.jpg')">
+						<a href="#">
+							<span class="categories-list-subtitle">Каталог</span>
+							<span class="categories-list-title">Акрил</span>
+						</a>
+					</li>
+					<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/1196802395_w640_h640_kuhni-iz-naturalnogo.jpg')">
+						<a href="#">
+							<span class="categories-list-subtitle">Каталог</span>
+							<span class="categories-list-title">Шпон</span>
+						</a>
+					</li>
+					<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/Слой_4.jpg')">
+						<a href="#">
+							<span class="categories-list-subtitle">Каталог</span>
+							<span class="categories-list-title">Эмаль</span>
+						</a>
+					</li>
+					<li class="lazy main-our-categories-list-item" data-bg="url('img/_src/body/main/viber_image_mediastart_23.02.jpg')">
+						<a href="#">
+							<span class="categories-list-subtitle">Каталог</span>
+							<span class="categories-list-title">Корпусная мебель</span>
+						</a>
+					</li>
+				</ul>
+				<a href="#" class="more">Посмотреть все кухни   <i class="fas fa-arrow-right"></i></a>
+			</div>
 		</div>
 	</section>
-	<section class="main-our-categories popular-items-container">
+	<section class="main-our-categories popular-items-container padding-container">
 		<div class="container">
 			<h2 class="title">Популярные товары</h2>
 			<p class="main-our-categories-text">Find a bright ideal to suit your taste with our great selection of suspension, wall, floor and table lights.</p>
@@ -355,46 +450,52 @@
 </main>
 <!-- Конец главного блока -->
 <!-- Начало футера -->
-<footer id="footer" class="padding-container">
-  <div class="container flex-container">
-	  <div class="footer-item">
-		  <a href="#" class="footer-logo"><img data-src="img/icons/footer-logo.png" class="lazy" alt="footer"></a>
-		  <p class="copyright">
-			  © 2000 - 2018 “Кухни ЗОВ” <br>
-			  Белорусские кухни ЗОВ в Москве! <br>
-			  наличие ссылки на https://zovrus.ru/ обязательно.
-		  </p>
-	  </div>
-	  <div class="footer-item">
-		  <h4 class="footer-title">Каталог ЗОВ</h4>
-		  <ul class="footer-nav">
-			  <li class="footer-nav-item"><a href="#">- Кухни</a></li>
-			  <li class="footer-nav-item"><a href="#">- Столы и стулья</a></li>
-			  <li class="footer-nav-item"><a href="#">- Корпусная мебель</a></li>
-			  <li class="footer-nav-item"><a href="#">- Двери</a></li>
-			  <li class="footer-nav-item"><a href="#">- Бытовая техника</a></li>
-			  <li class="footer-nav-item"><a href="#">- Фильтры для воды</a></li>
-		  </ul>
-	  </div>
-	  <div class="footer-item">
-		  <h4 class="footer-title">Главное меню</h4>
-		  <ul class="footer-nav">
-			  <li class="footer-nav-item"><a href="#">- О компании</a></li>
-			  <li class="footer-nav-item"><a href="#">- Акции</a></li>
-			  <li class="footer-nav-item"><a href="#">- Каталог ЗОВ</a></li>
-			  <li class="footer-nav-item"><a href="#">- Наши работы</a></li>
-			  <li class="footer-nav-item"><a href="#">- Распродажа образцов</a></li>
-			  <li class="footer-nav-item"><a href="#">- Салоны продаж</a></li>
-		  </ul>
-	  </div>
-	  <div class="footer-item">
-		  <ul class="contacts">
-			  <li class="contacts-item"><i class="fas fa-phone-alt"></i><span class="footer-contacts-text">Телефон:</span><a href="tel:88005002239"> 8-800-500-22-39</a></li>
-			  <li class="contacts-item"><i class="fas fa-power-off"></i><span class="footer-contacts-text">Время работы:</span> Mon-Fri 08:00 - 18:00</li>
-			  <li class="contacts-item"><i class="fas fa-envelope"></i><span class="footer-contacts-text">Email: </span><a href="mailto:info@zovrus.ru">info@zovrus.ru</a></li>
-		  </ul>
-		  <p class="footer-info">Все материалы, размещенные на сайте, не являются публичной офертой, и предоставлены в информационно-рекламных целях.</p>
-		  <a href="#" class="politic-more">Политика конфеденциальности</a>
+<footer id="footer">
+  <div class="padding-container">
+	  <div class="container flex-container">
+		  <div class="footer-item">
+			  <a href="#" class="footer-logo"><img data-src="img/icons/footer-logo.png" class="lazy" alt="footer"></a>
+			  <p class="copyright">
+				  © 2000 - 2018 “Кухни ЗОВ” <br>
+				  Белорусские кухни ЗОВ в Москве! <br>
+				  наличие ссылки на https://zovrus.ru/ обязательно.
+			  </p>
+		  </div>
+		  <div class="footer-item">
+			  <h4 class="footer-title">Каталог ЗОВ</h4>
+			  <ul class="footer-nav">
+				  <li class="footer-nav-item"><a href="#">- Кухни</a></li>
+				  <li class="footer-nav-item"><a href="#">- Столы и стулья</a></li>
+				  <li class="footer-nav-item"><a href="#">- Корпусная мебель</a></li>
+				  <li class="footer-nav-item"><a href="#">- Двери</a></li>
+				  <li class="footer-nav-item"><a href="#">- Бытовая техника</a></li>
+				  <li class="footer-nav-item"><a href="#">- Фильтры для воды</a></li>
+			  </ul>
+		  </div>
+		  <div class="footer-item">
+			  <h4 class="footer-title">Главное меню</h4>
+			  <ul class="footer-nav">
+				  <li class="footer-nav-item"><a href="#">- О компании</a></li>
+				  <li class="footer-nav-item"><a href="#">- Акции</a></li>
+				  <li class="footer-nav-item"><a href="#">- Каталог ЗОВ</a></li>
+				  <li class="footer-nav-item"><a href="#">- Наши работы</a></li>
+				  <li class="footer-nav-item"><a href="#">- Распродажа образцов</a></li>
+				  <li class="footer-nav-item"><a href="#">- Салоны продаж</a></li>
+			  </ul>
+		  </div>
+		  <div class="footer-item">
+			  <ul class="contacts">
+				  <li class="contacts-item"><i class="fas fa-phone-alt"></i><span class="footer-contacts-text">Телефон:</span><a href="tel:88005002239"> 8-800-500-22-39</a></li>
+				  <li class="contacts-item"><i class="fas fa-power-off"></i><span class="footer-contacts-text">Время работы:</span> Mon-Fri 08:00 - 18:00</li>
+				  <li class="contacts-item"><i class="fas fa-envelope"></i><span class="footer-contacts-text">Email: </span><a href="mailto:info@zovrus.ru">info@zovrus.ru</a></li>
+			  </ul>
+			  <p class="footer-info mobile-footer-tel">
+				  Звоните: круглосуточно
+				  <a href="tel:88005002239">8-800-500-22-39</a>
+			  </p>
+			  <p class="footer-info">Все материалы, размещенные на сайте, не являются публичной офертой, и предоставлены в информационно-рекламных целях.</p>
+			  <a href="#" class="politic-more">Политика конфеденциальности</a>
+		  </div>
 	  </div>
   </div>
 </footer>
