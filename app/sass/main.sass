@@ -540,7 +540,7 @@ img
     width: auto
     height: -webkit-fill-available
     position: relative
-    padding: 35px
+    padding: 20px 35px
   .more
     text-align: right
 .categories-list-subtitle
@@ -713,5 +713,247 @@ img
       font-weight: bold
       color: #000
 .mobile-title-street
+  display: none
+//Catalog
+.catalog-info
+  text-align: center
+  margin: 50px auto 100px auto
+  width: 80%
+  .padding-container
+    padding: 0 150px
+//Tabs
+.catalog-tab-container
+  position: relative
+.catalog-tab
+  @include list-type-none
+  justify-content: flex-start
+  .catalog-tab-item
+    margin-right: 25px
+    a
+      color: #222
+  .catalog-tab-item.active
+    border-bottom: 2px solid #222
+    a
+      font-size: 16px
+  .catalog-tab-item.disabled
+    a
+      color: #929292
+      font-size: 16px
+      cursor: not-allowed
+.list-shop-btn
+  display: none
+  @include list-type-none
+  position: absolute
+  left: 50px
+  top: 90px
+.list-shop-item
+  margin-bottom: 10px
+  a
+    color: #222
+.shop-btn
+  width: 60px
+  height: 60px
+  background-color: #353c41
+  background-repeat: no-repeat
+  background-size: auto
+  background-position: center
+  border-radius: 3px
+.shop-btn.active
+  background-color: #000
+.shop-text
+  padding-left: 15px
+  max-width: 113px
+  font-family: "Open Sans", sans-serif
+  font-size: 14px
+  line-height: 19px
+// Filter
+.catalog-filter-container
+  margin-top: 50px
+.catalog-filter
+  @include list-type-none
+.catalog-filter-item,.catalog-filter-list
+  width: 255px
+  max-height: 50px
+  border-radius: 3px
+  border: 1px solid #bfbfbf
+  padding: 15px
+  margin-right: 23px
+  position: relative
+.catalog-filter-name
+  color: #353c41
+.catalog-filter-header
+  align-items: center
+.catalog-filter-button,.catalog-tab-item-button,.mobile-catalog-filter-button
+  cursor: pointer
+  color: #82898c
+  font-size: 14px
+.catalog-filter-button.active,.sort-date-btn.active,.catalog-tab-item-button.active
+  transform: rotate(180deg)
+.catalog-tab-item-button
+  display: none
+.tab
+  display: none
+.tab.active
+  display: block
+ul.catalog-filter-list
+  display: none
+  background-color: #fff
+  z-index: 100
+  @include list-type-none
+  margin-right: 0
+  width: -webkit-fill-available
+  max-height: initial
+  position: absolute
+  left: 0
+  top: 55px
+.catalog-filter-list-item
+  input[type="checkbox"]
+    display: none
+  label:before
+    content: ''
+    display: inline-block
+    width: 16px
+    height: 16px
+    border-radius: 3px
+    border: 1px solid #353c41
+    vertical-align: sub
+    margin-right: 10px
+  input:checked + label:before
+    background: url('../img/icons/check.png') no-repeat center
+    background-size: auto
+  input:disabled + label
+    color: #717171
+  input:disabled + label:before
+    border-color: #252525
+.catalog-filter-bottom
+  margin-top: 34px
+  @include list-type-none
+.catalog-filter-bottom
+  justify-content: flex-end
+.catalog-filter-bottom-item:not(:last-of-type)
+  margin-right: 30px
+.catalog-filter-bottom-item
+  position: relative
+.reset-filters
+  cursor: pointer
+  text-decoration: underline
+.sort-name
+  margin-right: 10px
+.sort-date
+  @include list-type-none
+.sort-date-btn
+  cursor: pointer
+  font-size: 11px
+  padding: 0 5px
+.sort-date-list
+  display: none
+  position: absolute
+  background-color: #fff
+  width: 100%
+  z-index: 100
+  @include list-type-none
+  .sort-date-item
+    font-size: 13px
+    cursor: pointer
+.catalog
+  @include list-type-none
+  margin-top: 50px
+  flex-wrap: wrap
+  justify-content: flex-start
+.catalog-item
+  width: 47%
+  height: 421px
+  margin-bottom: 40px
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  &>a
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    width: auto
+    height: -webkit-fill-available
+    padding: 20px 35px
+    position: relative
+  .catalog-title
+    font-size: 24px
+    margin-bottom: 12px
+    font-weight: normal
+  .catalog-subtitle
+    font-size: 14px
+    font-weight: normal
+.catalog-item:nth-of-type(odd)
+  margin-right: 3%
+.catalog-docs-item:first-of-type
+  width: 30%
+.catalog-docs-item:last-of-type
+  width: 70%
+.catalog-docs-item
+  .title
+    width: 313px
+    font-size: 30px
+    font-family: "Open Sans", sans-serif
+.docs-list
+  @include list-type-none
+  position: relative
+  .owl-nav
+    position: absolute
+    width: 100%
+    display: flex
+    justify-content: space-between
+    top: 40%
+.docs-item
+  img
+    width: 26px !important
+    height: 30px !important
+    margin: 20px auto 5px auto
+  .docs-title
+    display: block
+    text-align: center
+    margin-bottom: 5px
+    font-size: 12px
+    font-weight: bold
+  &>a
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 12px
+    color: #222
+    .fas
+      font-size: 9px
+      padding-right: 2px
+//Pagination
+.pagination
+  @include list-type-none
+  justify-content: center
+.pagination-item
+  padding: 11px 20px
+  border-radius: 3px
+  background-color: #f0f0f0
+  text-align: center
+  font-family: "Open Sans", sans-serif
+  margin-right: 10px
+  a
+    display: block
+    width: 100%
+    height: 100%
+    color: #222
+.pagination-item.active
+  background-color: #000
+  a
+    color: $white
+.more-info-catalog
+  .more-info-title-dec
+    top: 65px
+  .more-info-item
+    max-width: 370px
+  .more-info-empty
+    margin-bottom: 40px
+  .more-info-title-dec
+    text-transform: initial
+    letter-spacing: 13px
+.mobile-catalog-more
+  display: none
+.mobile-catalog-filter-item
   display: none
 @import "media"
