@@ -108,5 +108,43 @@ document.addEventListener("DOMContentLoaded", function() {
                 items: 9
             }
         }
-    })
+    });
+    $('.product-main-slider').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 1,
+        arrows: true,
+        nextArrow: '<i class="fas fa-chevron-right"></i>',
+        prevArrow: '<i class="fas fa-chevron-left"></i>',
+        asNavFor: '.thumb-main-slider',
+        responsive: [
+            {
+                breakpoint: 800,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    centerMode: true
+                }
+            }
+            ]
+    });
+    $('.thumb-main-slider').slick({
+        infinite: false,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        arrows: false,
+        focusOnSelect: false,
+        variableWidth: true,
+        asNavFor: '.product-main-slider'
+    });
+    $('[data-fancybox="images"]').fancybox({
+        buttons : [
+            'slideShow',
+            'zoom',
+            'fullScreen',
+            'close'
+        ],
+    });
+    $('.product-main-slider .slick-dots button').text('');
 });

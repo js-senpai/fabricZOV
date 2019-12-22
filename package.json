@@ -24,5 +24,8 @@
 		"gulp-uglify-es": "^2.0.0",
 		"gulp-imagemin": "^6.1.0",
 		"jquery": "^3.4.1"
+	},
+	"dependencies": {
+		"vanilla-lazyload": "^12.4.0"
 	}
 }

@@ -35,7 +35,7 @@ body
   @include font(400,14px,24px)
 // Headers text configs
 h1
-  @include font(400,40px,30px)
+  @include font(400,40px,48px)
 h2
   @include font(400,30px,30px)
 h3
@@ -660,6 +660,7 @@ img
   margin-top: 50px
 .breadcrumbs-item
   margin-right: 10px
+  width: max-content
   a
     color: #000
     font-size: 13px
@@ -956,4 +957,154 @@ ul.catalog-filter-list
   display: none
 .mobile-catalog-filter-item
   display: none
+//Products
+.mobile-breadcrumbs
+  display: none
+.product-container-item:first-of-type
+  margin-right: 40px
+.product-main-slider,.thumb-main-slider
+  width: 708px
+  position: relative
+  a.fancybox-img
+    display: block
+    width: 100%
+    height: 100%
+.product-main-slider
+  width: 708px
+  position: relative
+  .fa-chevron-left.slick-arrow,.fa-chevron-right.slick-arrow
+    position: absolute
+    z-index: 100
+    display: block
+    text-align: center
+    width: 52px
+    height: 52px
+    background-color: #131313
+    color: $white
+    line-height: 52px
+    border-radius: 50%
+    opacity: 0.9
+    top: 45%
+    cursor: pointer
+  .fa-chevron-left.slick-arrow
+    left: 10px
+  .fa-chevron-right.slick-arrow
+    right: 10px
+  .slick-arrow.slick-disabled
+    background-color: #ffffff
+    opacity: 0.54
+    color: #5f6568
+.product-main-slider-item
+  height: 455px
+.product-main-slider-item,.thumb-main-slider-item
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+.thumb-main-slider
+  margin-top: 18px
+  .slick-current
+    border: 2px solid #000
+.thumb-main-slider-item
+  width: 102px
+  height: 102px
+.thumb-main-slider-item:not(:last-of-type)
+  margin-right: 18px
+.product-container
+  margin-top: 100px
+  margin-bottom: 100px
+.product-container-item
+  .breadcrumbs
+    margin-top: 0
+.price-container
+  margin-top: 50px
+  justify-content: flex-start
+  margin-bottom: 10px
+  .fullprice
+    font-size: 30px
+    margin-right: 18px
+  .saleprice
+    color: #929292
+    font-size: 24px
+    text-decoration: line-through
+.more-info-price
+  font-size: 14px
+  position: relative
+.more-info-price:after
+  content: ''
+  display: block
+  width: 201px
+  height: 1px
+  background-color: #252525
+  margin: 20px 0
+.description
+  .description-title
+    font-size: 18px
+    font-weight: 400
+    margin-bottom: 20px
+  .description-text
+    font-size: 14px
+.lead-button-container
+  margin-top: 30px
+.lead-button-item
+  width: 200px
+  cursor: pointer
+  height: 78px
+  border-radius: 3px 3px 0 0
+  background-color: #f0f0f0
+  margin-right: 9px
+  justify-content: center
+  align-items: center
+  border-bottom: 2px solid #999999
+  margin-bottom: 10px
+.lead-button-item:hover
+  border-bottom: 4px solid #434343
+.lead-button-img
+  width: 30px
+  height: 30px
+  background-size: auto
+  background-repeat: no-repeat
+  background-position: center
+.lead-button-text
+  font-size: 12px
+  line-height: 17px
+  margin-left: 10px
+.product-param
+  margin-bottom: 20px
+.param-title
+  font-size: 13px
+.param-list
+  justify-content: flex-start
+.param-item
+  padding: 10px
+  background-color: #e9e9e9
+  margin-right: 10px
+  cursor: pointer
+.more-info-product
+  .more-info-empty
+    margin-bottom: 40px
+  .more-info-item
+    max-width: 400px
+.more-info-color
+  @include list-type-none
+  justify-content: flex-start
+  flex-wrap: wrap
+.more-info-color-item.color
+  width: 42px
+  height: 42px
+  background-color: #252525
+  margin-right: 10px
+  margin-bottom: 10px
+.more-info-color-item:last-of-type
+  font-size: 14px
+  color: #666666
+  line-height: 42px
+.more-info-colors-info-img
+  width: 60px
+  margin-right: 18px
+  background-size: auto
+  background-repeat: no-repeat
+  background-position: center
+.more-info-colors-info-text
+  font-size: 14px
+  line-height: 20px
 @import "media"
