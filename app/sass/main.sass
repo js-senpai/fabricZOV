@@ -43,6 +43,8 @@ h3
 img
   max-width: 100%
   height: auto
+.hidden
+  display: none !important
 .btn
   display: block
   width: 199px
@@ -95,7 +97,7 @@ img
   background-color: #383838
   position: relative
   .mobile-header-item
-    padding: 18px 0
+    padding: 15px 0
   .logo-header
     display: block
     width: 44px
@@ -106,7 +108,7 @@ img
     text-transform: uppercase
     font-size: 14px
     color: $white
-    font-weight: bold
+    font-weight: 400
     line-height: 45px
     margin: 0
   .mobile-tel
@@ -115,36 +117,93 @@ img
     display: block
     height: 100%
   .search-button
-    margin: 0 10px
+    margin: 0 13px
   .mobile-toggle-cat
     @include reset-button
     color: $white
     background: transparent
-  .mobile-sales-btn
-    display: none
   .mobile-header-nav
     display: none
     position: absolute
-    text-align: center
-    height: inherit
-    bottom: -77px
-    width: 100%
+    top: 74px
+    width: -webkit-fill-available
+    padding: 10px 0
     @include list-type-none
     left: 0px
-    z-index: 100
-    .mobile-header-nav-item
-      background-color: #383838
-      a
-        display: block
-        padding: 15px 0
-        i
-          font-size: 12px
-          vertical-align: middle
-    .mobile-header-submenu
-      display: none
-      padding-left: 10px
-  .mobile-header-nav.active
+    z-index: 1000
+    background-color: #383838
+  .mobile-btn-close-nav
     display: block
+    width: 20px
+    height: 20px
+    @include reset-button
+    color: #fff
+    cursor: pointer
+    background-color: transparent
+    .mobile-btn-close-dec
+      display: block
+      width: 16px
+      height: 1px
+      background-color: $white
+      position: absolute
+    .mobile-btn-close-dec:first-of-type
+      transform: rotate(45deg)
+    .mobile-btn-close-dec:last-of-type
+      transform: rotate(-45deg)
+  .mobile-header-nav-container
+    padding: 20px 40px
+  .mobile-submenu-container
+    position: relative
+    &>.flex-container
+      justify-content: flex-end
+      padding: 0 15px
+  .mobile-header-submenu
+    display: none
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    width: -webkit-fill-available
+    background-color: #383838
+    padding: 20px 40px;
+    z-index: 100
+  .mobile-header-nav-list
+    @include list-type-none
+  .mobile-header-nav-item,.mobile-header-submenu-item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 20px
+  .open-submenu
+    color: #fff
+    font-size: 10px
+    display: block
+    cursor: pointer
+    width: 20px
+    height: 15px
+    line-height: 15px
+  .mobile-nav-btn-buy
+    display: block
+    width: 100%
+    height: 53px
+    line-height: 53px
+    border: 1px solid #ffffff
+    color: #fff
+    background-color: transparent
+    font-family: "Myriad Pro"
+    text-align: center
+    margin-top: 147px
+  .mobile-header-nav-back
+    font-size: 14px
+    color: #fff
+    margin-bottom: 20px
+    display: block
+    i
+      font-size: 10px
+      vertical-align: inherit
+      padding-right: 5px
+.mobile-sales-btn
+  display: none
 .top-head
   background-color: #383838
   .container
@@ -379,8 +438,9 @@ img
   font-size: 7px
 .main-banner-list-bottom
   font-size: 14px
-.banner-sales-btn,.mobile-sales-btn
+.banner-sales-btn
   display: block
+.banner-sales-btn,.mobile-sales-btn
   width: 170px
   height: 53px
   border-radius: 3px 0 0 3px
@@ -961,16 +1021,19 @@ ul.catalog-filter-list
 .mobile-breadcrumbs
   display: none
 .product-container-item:first-of-type
-  margin-right: 40px
+  margin-right: 2%
+  width: 45%
+.product-container-item:last-of-type
+  width: 52%
 .product-main-slider,.thumb-main-slider
-  width: 708px
+  width: 100%
   position: relative
   a.fancybox-img
     display: block
     width: 100%
     height: 100%
 .product-main-slider
-  width: 708px
+  width: 100%
   position: relative
   .fa-chevron-left.slick-arrow,.fa-chevron-right.slick-arrow
     position: absolute
@@ -1006,9 +1069,9 @@ ul.catalog-filter-list
     border: 2px solid #000
 .thumb-main-slider-item
   width: 102px
-  height: 102px
+  height: 84px
 .thumb-main-slider-item:not(:last-of-type)
-  margin-right: 18px
+  margin-right: 3.8%
 .product-container
   margin-top: 100px
   margin-bottom: 100px
