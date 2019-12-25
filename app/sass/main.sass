@@ -24,7 +24,7 @@ a
   color: #fff
 body
   min-width: 320px
-  max-width: 1980px
+  max-width: 2000px
   width: 100%
   margin: 0 auto
   position: relative
@@ -72,13 +72,16 @@ img
   font-size: 14px
   color: #000
   text-transform: uppercase
+#main
+  margin-top: 100px
+  margin-bottom: 35px
 #main,#footer
   overflow: hidden
 #main,#footer,#header
   width: 100%
 // containers
 .container
-  max-width: 1355px
+  max-width: 1365px
   width: 100%
   margin: 0 auto
 .grid-container
@@ -87,32 +90,31 @@ img
 .flex-container
   display: flex
   justify-content: space-between
-//Paddings
-.padding-container
-  padding: 0 20px
 //header
 .mobile-header
   display: none
-  height: 77px
+  height: 74px
   background-color: #383838
   position: relative
+  .mobile-header-item:nth-of-type(2)
+    width: 50%
   .mobile-header-item
     padding: 15px 0
   .logo-header
     display: block
     width: 44px
     height: 38px
-    padding-right: 25px
+    padding-right: 19px
     border-right: 1px solid $white
   .mobile-title
     text-transform: uppercase
     font-size: 14px
     color: $white
     font-weight: 400
-    line-height: 45px
+    line-height: 39px
     margin: 0
   .mobile-tel
-    line-height: 48px
+    line-height: 39px
   .mobile-tel,.search-button
     display: block
     height: 100%
@@ -209,11 +211,12 @@ img
   .container
     position: relative
   .contacts-item
-    margin-right: 20px
-    line-height: 25px
+    margin-right: 34px
+    line-height: 29px
   .logo-header
     display: flex
     width: 141px
+    z-index: 50
     height: 141px
     background-color: #ffffff
     justify-content: center
@@ -229,13 +232,13 @@ img
   width: 70%
 .top-header-menu-container
   width: 30%
-  margin-right: 45px
+  margin-right: 27px
 .contacts-header.flex-container
   justify-content: flex-start
 .header-social,.contacts,.top-header-menu
   @include list-type-none
 .header-social
-  margin-right: 30px
+  margin-right: 38px
 .header-social-item
   width: 27px
   height: 27px
@@ -258,7 +261,7 @@ img
   color: #fff
   span
     color: #6f767a
-  .fas
+  i
     color: #6f767a
     margin-right: 10px
 .top-header-menu
@@ -290,10 +293,12 @@ img
   padding-top: 20px
   padding-bottom: 20px
   background-color: #434343
-.bottom-header-item:last-of-type
-  width: 60%
+.bottom-header-item
   justify-content: flex-start
-  margin-right: 45px
+.bottom-header-item:first-of-type
+  width: 41%
+.bottom-header-item:last-of-type
+  width: 61%
 .bottom-header-lead-toggle,.search-form-header__search
   width: 222px
   height: 45px
@@ -324,9 +329,9 @@ img
   margin-right: 25px
 .col-advantages
   display: inline-block
-  margin-left: 5px
+  margin-left: 13px
   font-size: 10px
-  min-width: 28px
+  padding: 1px 6px
   height: 21px
   border-radius: 2px
   background-color: #252525
@@ -335,6 +340,7 @@ img
 .bottom-header-cat-container
   line-height: 45px
   font-size: 13px
+  margin-left: 25px
   color: #fff
   text-transform: uppercase
   position: relative
@@ -342,6 +348,7 @@ img
   display: inline-block
   width: 12px
   height: 8px
+  margin-right: 5px
   font-size: 12px
   color: #ffffff
   background: transparent
@@ -398,20 +405,28 @@ img
   height: 602px
   position: relative
   padding-top: 1px
+  &>.flex-container
+    height: 100%
+    flex-wrap: wrap
+    flex-direction: column
+    justify-content: flex-end
+.main-banner-top,.main-banner-list
+  width: -webkit-fill-available
 .main-banner-top
-  margin-top: 179px
+  margin-bottom: 179px
   .title,.subtitle
     color: $white
 .main-banner-list
-  position: absolute
-  bottom: 0
-  right: 0
   @include list-type-none
+  text-align: right
 .main-banner-list-item
   display: inline-block
+  text-align: left
   vertical-align: bottom
-  padding: 0 60px 30px 20px
+  padding: 0 52px 38px 27px
   border-left: 1px solid #ffffff85
+.main-banner-list-item:last-of-type
+  padding-right: 0
 .main-banner-list-item.active
   padding-bottom: 85px
   .main-banner-list-top
@@ -427,15 +442,15 @@ img
   content: "►"
   display: block
   position: absolute
-  right: -15px
+  right: -22px
   top: 2px
-  width: 10px
-  height: 10px
+  width: 13px
+  height: 13px
   border-radius: 50%
   border: 1px solid #b5b5b5
   text-align: center
-  line-height: 10px
-  font-size: 7px
+  line-height: 13px
+  font-size: 8px
 .main-banner-list-bottom
   font-size: 14px
 .banner-sales-btn
@@ -544,12 +559,12 @@ img
     vertical-align: middle
     font-size: 10px
 //Categories block
-.main-our-categories,.more-info
-  margin-top: 100px
+.main-our-categories
+  margin-top: 84px
 .main-our-categories-text
   font-size: 15px
   color: #666666
-  margin-top: 13px
+  margin-top: 24px
 .mobile-main-our-categories
   display: none
   .more
@@ -585,10 +600,9 @@ img
   justify-content: flex-start
   @include list-type-none
 .main-our-categories-list-item
-  width: 324px
+  width: calc(100%/4.4)
   height: 313px
   margin-bottom: 10px
-  margin-right: 10px
   background-size: cover
   background-repeat: no-repeat
   background-position: center
@@ -603,6 +617,8 @@ img
     padding: 20px 35px
   .more
     text-align: right
+.main-our-categories-list-item:not(:last-of-type)
+  margin-right: 2%
 .categories-list-subtitle
   font-size: 14px
   color: #cbcaca
@@ -627,7 +643,6 @@ img
   letter-spacing: 29.9px
 @import "media" // Always at the end
 .more-info
-  margin-bottom: 100px
   .container
     position: relative
 .more-info-title-dec
@@ -636,7 +651,6 @@ img
 .more-info-item
   z-index: 100
   width: calc(100%/3)
-  max-width: 352px
   strong
     margin-bottom: 10px
     display: block
@@ -648,9 +662,10 @@ img
 .more-info-subtitle
   font-size: 18px
 .more-info-text,.more-info-subtitle
-  margin-bottom: 20px
+  margin-bottom: 22px
 .more-info-container
   width: 100%
+  justify-content: flex-start
 .more-info-list
   padding-left: 17px
 .more-info-list-item
@@ -664,6 +679,9 @@ img
   display: flex
   flex-direction: column
   justify-content: flex-end
+.more-info-item:nth-of-type(2)
+  .more-info-title
+    width: 50%
 //Footer
 #footer
   padding-top: 102px
@@ -672,7 +690,7 @@ img
 .copyright
   font-size: 13px
   color: $white
-  margin-top: 36px
+  margin-top: 20px
 .footer-item:nth-of-type(1)
   width: 45%
   margin-right: 5%
@@ -700,7 +718,7 @@ img
 //Shop
 .page
   .main-banner
-    height: 161px
+    height: 153px
   .main-about-us
     margin-top: 50px
   .main-about-us-dec-title
@@ -717,7 +735,6 @@ img
 .breadcrumbs
   @include list-type-none
   justify-content: flex-start
-  margin-top: 50px
 .breadcrumbs-item
   margin-right: 10px
   width: max-content
@@ -1004,14 +1021,13 @@ ul.catalog-filter-list
   a
     color: $white
 .more-info-catalog
-  .more-info-title-dec
-    top: 65px
   .more-info-item
     max-width: 370px
   .more-info-empty
     margin-bottom: 40px
   .more-info-title-dec
     text-transform: initial
+    top: 65px
     letter-spacing: 13px
 .mobile-catalog-more
   display: none
@@ -1021,8 +1037,8 @@ ul.catalog-filter-list
 .mobile-breadcrumbs
   display: none
 .product-container-item:first-of-type
-  margin-right: 2%
-  width: 45%
+  margin-right: 3%
+  width: 52%
 .product-container-item:last-of-type
   width: 52%
 .product-main-slider,.thumb-main-slider
@@ -1065,21 +1081,23 @@ ul.catalog-filter-list
   background-position: center
 .thumb-main-slider
   margin-top: 18px
+  .slick-track
+    transform: none !important
   .slick-current
     border: 2px solid #000
 .thumb-main-slider-item
-  width: 102px
-  height: 84px
+  height: 122px
 .thumb-main-slider-item:not(:last-of-type)
-  margin-right: 3.8%
+  margin-right: 3%
 .product-container
-  margin-top: 100px
-  margin-bottom: 100px
+  margin-bottom: 84px
 .product-container-item
   .breadcrumbs
     margin-top: 0
+  .title
+    margin-top: 5px
 .price-container
-  margin-top: 50px
+  margin-top: 46px
   justify-content: flex-start
   margin-bottom: 10px
   .fullprice
@@ -1098,18 +1116,19 @@ ul.catalog-filter-list
   width: 201px
   height: 1px
   background-color: #252525
-  margin: 20px 0
+  margin: 24px 0
 .description
   .description-title
     font-size: 18px
     font-weight: 400
-    margin-bottom: 20px
+    margin-bottom: 11px
   .description-text
     font-size: 14px
+    width: 78%
 .lead-button-container
-  margin-top: 30px
+  margin-top: 60px
 .lead-button-item
-  width: 200px
+  width: 32%
   cursor: pointer
   height: 78px
   border-radius: 3px 3px 0 0
@@ -1128,17 +1147,19 @@ ul.catalog-filter-list
   background-repeat: no-repeat
   background-position: center
 .lead-button-text
+  width: 51%
   font-size: 12px
   line-height: 17px
   margin-left: 10px
 .product-param
-  margin-bottom: 20px
+  margin-bottom: 15px
 .param-title
   font-size: 13px
 .param-list
   justify-content: flex-start
+  margin-top: 8px
 .param-item
-  padding: 10px
+  padding: 2px 10px
   background-color: #e9e9e9
   margin-right: 10px
   cursor: pointer
@@ -1146,7 +1167,12 @@ ul.catalog-filter-list
   .more-info-empty
     margin-bottom: 40px
   .more-info-item
-    max-width: 400px
+    max-width: initial
+  .more-info-item:nth-of-type(2)
+    padding-left: 87px
+  .more-info-title-dec
+    top: 71px
+    left: -23px
 .more-info-color
   @include list-type-none
   justify-content: flex-start
@@ -1161,9 +1187,11 @@ ul.catalog-filter-list
   font-size: 14px
   color: #666666
   line-height: 42px
+.more-info-colors-info
+  margin-top: 18px
 .more-info-colors-info-img
   width: 60px
-  margin-right: 18px
+  margin-right: 13px
   background-size: auto
   background-repeat: no-repeat
   background-position: center

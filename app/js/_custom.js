@@ -133,11 +133,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     $('.thumb-main-slider').slick({
         infinite: false,
-        slidesToShow: 6,
+        slidesToShow: 5,
         slidesToScroll: 1,
         arrows: false,
         focusOnSelect: false,
         variableWidth: false,
+        adaptiveHeight: true,
         asNavFor: '.product-main-slider'
     });
     $('[data-fancybox="images"]').fancybox({

@@ -43,18 +43,18 @@
      margin-top: 20px
    .more-info-container
      flex-wrap: wrap
-     .more
-       display: block
-       width: 100%
-       height: 50px
-       margin-top: 0
-       border-radius: 3px
-       border: 1px solid #ffffff
-       background-color: #252525
-       font-weight: bold
-       text-align: center
-       line-height: 50px
-       color: $white
+   .more.mobile-catalog-more
+     display: block
+     width: 100%
+     height: 50px
+     margin-top: 0
+     border-radius: 3px
+     border: 1px solid #ffffff
+     background-color: #252525
+     font-weight: bold
+     text-align: center
+     line-height: 50px
+     color: $white
    .more-info-item
      width: 100%
      margin-bottom: 30px
@@ -149,8 +149,9 @@
     .more
       display: none
     .more.mobile-catalog-more
-      display: block
       margin-top: 40px
+  .more.mobile-catalog-more
+    display: block
   .catalog-filter
     flex-wrap: wrap
   .mobile-catalog-filter-item
@@ -182,7 +183,46 @@
     text-align: center
     display: block
   .more-info-price:after
-    margin: 20px auto
+    margin: 12px auto
+  .description
+    .description-text
+      width: 99%
+      line-height: 26px
+      font-size: 14px
+  .lead-button-item
+    width: 100%
+  .lead-button-container
+    margin-top: 22px
+  .lead-button-item
+    height: 58px
+    justify-content: flex-start
+    padding-left: 23px
+  .lead-button-text
+    width: auto
+  .more-info-product .more-info-item:nth-of-type(2)
+    padding-left: 0
+  .product-container
+    margin-bottom: 30px
+  .more-info-product
+    margin-top: 30px
+  .more-info-title
+    text-align: center
+    padding-top: 4px
+    margin-bottom: 23px
+  .more-info-item:nth-of-type(2)
+    .more-info-title
+      width: 100%
+  .more-info-subtitle,.more-info-text
+    margin-bottom: 17px
+  .param-item
+    font-size: 11px
+  .more-info-item
+    margin-bottom: 11px
+  .main-about-us, .main-our-categories, .more-info
+    margin-top: 0
+  .main-our-categories-text
+    font-size: 13px
+    margin-top: 17px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 800px)
   .mobile-main-our-categories
@@ -200,10 +240,11 @@
   .main-our-categories-list
     justify-content: space-between
     .main-our-categories-title
-      font-size: 12px
-      margin-top: 18px
+      font-size: 11px
+      margin-top: 12px
+      line-height: 18px
     .main-our-categories-list-item
-      width: 171px
+      width: calc(100%/2.1)
       height: 171px
     .main-our-categories-list-item:nth-of-type(odd)
       margin-right: 11px
@@ -263,6 +304,26 @@
   .product-main-slider-item
     margin: 0 20px
     height: 228px
+  div.padding-container
+    padding-left: 12px
+    padding-right: 12px
+  #main
+    margin-top: 45px
+  .breadcrumbs
+    display: flex
+    justify-content: center
+  .breadcrumbs-item a
+    font-size: 12px
+  .title
+    font-size: 22px
+    line-height: 27px
+  .price-container
+    margin-top: 30px
+    .fullprice
+      font-size: 22px
+      margin-right: 30px
+    .saleprice
+      font-size: 19px
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
   .catalog-filter-bottom-item:not(:last-of-type)
@@ -305,4 +366,11 @@
 @media only screen and (min-width : 1960px)
   .list-shop-btn
     display: block
-
+@media screen and (max-width: 1370px)
+  .padding-container
+    padding-left: 20px
+    padding-right: 20px
+  .bottom-header-item:first-of-type
+    width: 30%
+  .bottom-header-item:last-of-type
+    width: 80%
