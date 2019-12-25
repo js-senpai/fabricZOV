@@ -92,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
    $('.mobile-catalog-filter-button').click(function () {
       $(this).toggleClass('active');
       $('.catalog-filter-item:not(.mobile-catalog-filter-item)').fadeToggle('slow');
+      $('.catalog-filter-bottom').toggleClass('active');
    });
     $('.docs-list').owlCarousel({
         autoplayHoverPause: true,

@@ -35,7 +35,7 @@
    .main-about-us-item:last-of-type
      width: 100%
      height: auto
-     padding: 0 20px
+     padding: 0 12px
      .more
        text-align: center
        margin-top: 30px
@@ -125,7 +125,7 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
   .catalog-info .padding-container
-    padding: 0 20px
+    padding: 0 12px
   .catalog-tab
     width: auto
     max-height: initial
@@ -236,7 +236,7 @@
       .categories-list-title
         font-size: 14px
   .popular-items-container .main-our-categories-list-item
-    margin-bottom: 90px
+    margin-bottom: 70px
   .main-our-categories-list
     justify-content: space-between
     .main-our-categories-title
@@ -304,11 +304,12 @@
   .product-main-slider-item
     margin: 0 20px
     height: 228px
-  div.padding-container
+  body .padding-container
     padding-left: 12px
     padding-right: 12px
-  #main
-    margin-top: 45px
+  .page
+    #main
+      margin-top: 45px
   .breadcrumbs
     display: flex
     justify-content: center
@@ -324,6 +325,130 @@
       margin-right: 30px
     .saleprice
       font-size: 19px
+  .main-banner-top
+    .title
+      font-size: 25px
+    .subtitle
+      font-size: 12px
+    .mobile-sales-btn
+      width: 115px
+      height: 35px
+      line-height: 35px
+  .main
+    .main-banner-top
+      margin-bottom: 0
+      .title
+        margin-top: 0
+    .main-banner
+      padding-top: 25px
+      padding-bottom: 31px
+    .mobile-main-banners
+      .mobile-main-banners-item a
+        padding-left: 10px
+        padding-right: 10px
+    .main-about-us-item
+      .subtitle
+        margin-top: 10px
+        font-size: 14px
+      .title
+        margin-top: 0
+        line-height: 38px
+        font-size: 24px
+      .main-about-us-text
+        width: 100%
+        text-align: center
+        margin-top: 7px
+    .mobile-main-our-categories
+      .owl-stage-outer
+        height: 238px
+      .more
+        margin-top: 18px
+    .main-our-categories.popular-items-container
+      margin-top: 44px
+    .main-our-categories
+      margin-top: 0
+    .more-info-text
+      width: 100%
+    .more-info-item:not(:last-of-type)
+      margin-bottom: 23px
+    .main-our-categories,.more-info
+      .more
+        display: block
+        width: 100%
+        height: 50px
+        margin-top: 30px
+        border-radius: 3px
+        border: 1px solid #fff
+        background-color: #252525
+        font-weight: 700
+        text-align: center
+        line-height: 50px
+        color: #fff
+    .more-info
+      margin-top: 38px
+      .more
+        margin-top: 1px
+      .more-info-title
+        font-size: 24px
+  .main-advantages-item
+    width: calc(100%/2)
+  .main-advantages-title
+    font-size: 12px
+    margin-bottom: 0
+  .main-advantages-text
+    font-size: 11px
+    line-height: 21px
+  .main #main
+    margin-bottom: 17px
+  .copyright
+    line-height: 17px
+  #footer
+    .footer-item
+      margin-right: 0
+    .politic-more
+      margin-top: 15px
+      font-weight: bold
+    .footer-info
+      margin-top: 6px
+    .mobile-footer-tel
+      line-height: 21px
+      font-size: 13px
+    .footer-info:last-of-type
+      font-size: 11px
+      width: 80%
+      line-height: 16px
+      text-align: center
+  .catalogs
+    .catalog-info
+      width: 100%
+      margin-top: 0
+      margin-bottom: 50px
+      .catalog-info-title
+        margin-top: 3px
+        line-height: 37px
+      .catalog-info-text
+        width: 100%
+    .tab
+      .catalog-filter-container
+        margin-top: 6px
+    .pagination
+      flex-wrap: wrap
+    .catalog-filter-bottom
+      display: none
+    .catalog-filter-bottom.active
+      display: flex
+    .catalog-filter-name,.catalog-tab-item.active a
+      padding-left: 10px
+      font-size: 13px
+      font-weight: bold
+    .catalog .catalog-item
+      height: 218px
+    .pagination
+      margin-top: 0
+  .main-about-us-item .main-about-us-text
+    width: 100%
+  .page .main-about-us
+    margin-top: 0
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
   .catalog-filter-bottom-item:not(:last-of-type)
@@ -336,7 +461,8 @@
     justify-content: center
   .main-our-categories-list .main-our-categories-list-item:nth-of-type(odd)
     margin-right: 0
-
+  .main-our-categories-list .main-our-categories-list-item
+    width: 100%
 
 /*==========  Mobile First  ==========*/
 

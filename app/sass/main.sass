@@ -72,13 +72,40 @@ img
   font-size: 14px
   color: #000
   text-transform: uppercase
-#main
-  margin-top: 100px
-  margin-bottom: 35px
+.page
+  #main
+    margin-top: 100px
+    margin-bottom: 35px
+  #main.catalogs
+    margin-top: 43px
+    margin-bottom: 50px
+  .main-banner
+    height: 153px
+  .main-about-us
+    margin-top: 50px
+  .main-about-us-dec-title
+    font-size: 26px
+    letter-spacing: normal
+    top: 298px
+  .main-about-us-item:first-of-type
+    width: 45%
+    margin-right: 5%
+  .main-about-us-dec:after
+    width: 50px
+    right: -75px
 #main,#footer
   overflow: hidden
 #main,#footer,#header
   width: 100%
+.main
+  .main-our-categories
+    margin-top: 99px
+  .more-info
+    margin-top: 18px
+  .more-info-title-dec:nth-of-type(2)
+    padding-left: 39px
+  #main
+    margin-bottom: 76px
 // containers
 .container
   max-width: 1365px
@@ -385,18 +412,21 @@ img
   background-position: center
   .more
     color: $white
-    line-height: 48px
+    font-size: 13px
+    line-height: 36px
   a
     display: flex
     justify-content: space-between
-    padding-top: 25px
-    padding-bottom: 25px
+    padding-top: 27px
+    padding-bottom: 27px
   .more
     margin-top: 0
 .mobile-main-banners-title
   font-weight: bold
-  font-size: 14px
+  font-size: 13px
   color: $white
+  line-height: 18px
+
 //Main Banner
 .main-banner
   width: 100%
@@ -413,9 +443,13 @@ img
 .main-banner-top,.main-banner-list
   width: -webkit-fill-available
 .main-banner-top
-  margin-bottom: 179px
+  margin-bottom: 87px
   .title,.subtitle
     color: $white
+  .subtitle
+    font-size: 16px
+  .title
+    font-size: 57px
 .main-banner-list
   @include list-type-none
   text-align: right
@@ -478,6 +512,7 @@ img
   padding-top: 30px
 .main-advantages-item
   text-align: center
+  width: calc(100%/6)
 .main-advantages-img
   margin: 0 auto
   height: 31px
@@ -490,17 +525,26 @@ img
   font-size: 12px
 //About us
 .main-about-us
-  margin-top: 100px
+  margin-top: 74px
   .flex-container
     justify-content: flex-start
 .main-about-us-item:first-of-type
-  width: 40%
-  margin-right: 10%
+  width: 35%
+  margin-right: 9%
 .main-about-us-item:last-of-type
   width: 50%
 .main-about-us-item
   position: relative
   height: 529px
+  .subtitle
+    margin-top: 36px
+  .title
+    text-transform: uppercase
+    line-height: 47px
+  .main-about-us-text
+    width: 82%
+  .more
+    margin-top: 53px
 .main-about-us-dec-title
   font-size: 30px
   letter-spacing: 6.6px
@@ -510,8 +554,8 @@ img
   color: #e0e0e0
   transform: rotate(-90deg)
   position: absolute
-  left: -167px
-  top: 278px
+  left: -185px
+  top: 286px
 .main-about-us-dec
   position: relative
 .main-about-us-dec:after
@@ -524,8 +568,15 @@ img
   position: absolute
   top: 50%
   right: -90px
+.main
+  .main-our-categories
+    margin-top: 99px
+  .more-info
+    margin-top: 18px
+  .more-info-title-dec:nth-of-type(2)
+    padding-left: 39px
 .main-about-us-container
-  width: 385px
+  width: 400px
   height: auto
   background: url('../img/_src/body/main/Georgina-in-Porcelain-and-Stone.jpg') no-repeat top center
   background-size: cover
@@ -585,6 +636,8 @@ img
   .owl-dots
     text-align: center
     margin-top: 15px
+  .owl-item.active.center
+    margin: 0 10px
   button.owl-dot
     display: inline-block
     margin-right: 10px
@@ -600,7 +653,7 @@ img
   justify-content: flex-start
   @include list-type-none
 .main-our-categories-list-item
-  width: calc(100%/4.4)
+  width: calc(100%/4.3)
   height: 313px
   margin-bottom: 10px
   background-size: cover
@@ -618,7 +671,9 @@ img
   .more
     text-align: right
 .main-our-categories-list-item:not(:last-of-type)
-  margin-right: 2%
+  margin-right: 1%
+.owl-carousel .main-our-categories-list-item
+  width: auto
 .categories-list-subtitle
   font-size: 14px
   color: #cbcaca
@@ -647,7 +702,8 @@ img
     position: relative
 .more-info-title-dec
   position: absolute
-  top: 40px
+  top: 74px
+  left: -9px
 .more-info-item
   z-index: 100
   width: calc(100%/3)
@@ -663,6 +719,8 @@ img
   font-size: 18px
 .more-info-text,.more-info-subtitle
   margin-bottom: 22px
+.more-info-text
+  width: 82%
 .more-info-container
   width: 100%
   justify-content: flex-start
@@ -679,9 +737,8 @@ img
   display: flex
   flex-direction: column
   justify-content: flex-end
-.more-info-item:nth-of-type(2)
-  .more-info-title
-    width: 50%
+.more-info-title
+  width: 50%
 //Footer
 #footer
   padding-top: 102px
@@ -716,21 +773,6 @@ img
 .footer-info.mobile-footer-tel
   display: none
 //Shop
-.page
-  .main-banner
-    height: 153px
-  .main-about-us
-    margin-top: 50px
-  .main-about-us-dec-title
-    font-size: 26px
-    letter-spacing: normal
-    top: 298px
-  .main-about-us-item:first-of-type
-    width: 45%
-    margin-right: 5%
-  .main-about-us-dec:after
-    width: 50px
-    right: -75px
 // Breadcrumbs
 .breadcrumbs
   @include list-type-none
@@ -793,9 +835,13 @@ img
 .mobile-title-street
   display: none
 //Catalog
+.catalogs
+  .catalog-info-text
+    width: 81%
+    margin: 0 auto
 .catalog-info
   text-align: center
-  margin: 50px auto 100px auto
+  margin: 39px auto 91px auto
   width: 80%
   .padding-container
     padding: 0 150px
@@ -962,6 +1008,9 @@ ul.catalog-filter-list
     font-weight: normal
 .catalog-item:nth-of-type(odd)
   margin-right: 3%
+.catalog-docs-container
+  margin-top: 33px
+  margin-bottom: 61px
 .catalog-docs-item:first-of-type
   width: 30%
 .catalog-docs-item:last-of-type
@@ -1004,8 +1053,10 @@ ul.catalog-filter-list
 .pagination
   @include list-type-none
   justify-content: center
+  margin-top: 72px
+  margin-bottom: 93px
 .pagination-item
-  padding: 11px 20px
+  padding: 8px 14px
   border-radius: 3px
   background-color: #f0f0f0
   text-align: center
@@ -1020,9 +1071,10 @@ ul.catalog-filter-list
   background-color: #000
   a
     color: $white
+.catalogs
+  .more-info-item:nth-of-type(2)
+    padding-left: 33px
 .more-info-catalog
-  .more-info-item
-    max-width: 370px
   .more-info-empty
     margin-bottom: 40px
   .more-info-title-dec
