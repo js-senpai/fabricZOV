@@ -9,6 +9,12 @@ document.addEventListener("DOMContentLoaded", function() {
     $('.bottom-header-cat-menu').mouseleave(function() {
         $('.bottom-header-cat-menu').css({'display': 'none'});
     });
+    $('.bottom-header-cat-menu-item').mouseenter(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+    $('.bottom-header-cat-submenu').mouseleave(function () {
+        $('.bottom-header-cat-menu-item.active').removeClass('active');
+    });
     $('.mobile-header-submenu').after('<span class="fas fa-chevron-right open-submenu"></span>');
     $('.open-submenu').click(function () {
         $(this).prev('.mobile-header-submenu').fadeToggle('slow');
