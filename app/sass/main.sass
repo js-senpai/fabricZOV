@@ -16,7 +16,7 @@ button
   @include reset-button
 a,button,input
   cursor: pointer
-  transition: 1s ease-in-out
+  transition: 500ms ease-in-out
 a
   text-decoration: none
   color: #fff
@@ -395,6 +395,7 @@ img
   color: #fff
   text-transform: uppercase
   position: relative
+  cursor: pointer
 .toggle-cat
   display: inline-block
   width: 12px
@@ -404,25 +405,32 @@ img
   color: #ffffff
   background: transparent
 .bottom-header-cat-menu,.bottom-header-cat-submenu
-  padding: 5px 20px 5px 20px
+  padding: 5px 20px
   width: 166px
   text-transform: uppercase
 .bottom-header-cat-menu
   display: none
-  right: -35px
-  top: 65px
+  right: 120px
+  top: 135px
   position: absolute
   background-color: #484848
   z-index: 100
   text-align: left
+  padding: 5px 0
   @include list-type-none
+.bottom-header-cat-submenu-item,.bottom-header-cat-menu-item
+  padding: 10px 0
+  cursor: pointer
 .bottom-header-cat-menu-item
   position: relative
+  padding: 10px 0
+  padding-left: 20px
   a
     font-size: 10px
   i
     font-size: 10px
     padding-right: 10px
+    color: $white
 .bottom-header-cat-menu-item.active
   &>a,&>i
     color: #848484
@@ -434,7 +442,7 @@ img
   top: -5px
   background-color: #484848
   @include list-type-none
-  left: -230px
+  left: -206px
   width: 100%
 .bottom-header-cat-submenu-item
   text-align: right
@@ -442,7 +450,7 @@ img
 .mobile-main-banners
   display: none
   @include list-type-none
-  transition: 1s ease-in-out
+  transition: 500ms ease-in-out
 .mobile-main-banners-item
   background-repeat: no-repeat
   background-size: cover
@@ -494,7 +502,7 @@ img
   height: 602px
   position: relative
   padding-top: 1px
-  transition: 1s ease-in-out
+  transition: 500ms ease-in-out
   &>.flex-container
     height: 100%
     flex-wrap: wrap
@@ -528,7 +536,7 @@ img
   vertical-align: bottom
   padding: 0 52px 38px 27px
   border-left: 1px solid #ffffff85
-  transition: 1s ease-in-out
+  transition: 500ms ease-in-out
   &>a:hover
     text-decoration: none
     .main-banner-list-bottom
@@ -537,6 +545,8 @@ img
   padding-right: 0
 .main-banner-list-item.active
   padding-bottom: 85px
+  .main-banner-list-bottom
+    text-decoration: underline
   .main-banner-list-top
     color: #fff
     .main-banner-text-dec:after
@@ -563,7 +573,7 @@ img
   font-size: 14px
 .banner-sales-btn
   display: block
-  transition: background-color 1s ease-in-out
+  transition: background-color 500ms ease-in-out
 .banner-sales-btn:hover,.mobile-sales-btn:hover
   background-color: #010101
   color: $white
@@ -748,7 +758,7 @@ img
   background-repeat: no-repeat
   background-position: center
   background-color: #f8f8f8
-  transition: 1s ease-in-out
+  transition: 500ms ease-in-out
   &>a
     display: flex
     flex-direction: column
@@ -762,8 +772,6 @@ img
 .main-our-categories-list-item>a:hover,.catalog-item>a:hover
   background: #0000007a
   text-decoration: none
-.main-our-categories-list-item>a:hover + .main-our-categories-title>a
-  text-decoration: underline
 .main-our-categories-list-item:not(:last-of-type)
   margin-right: 1%
 .owl-carousel .main-our-categories-list-item
@@ -777,10 +785,13 @@ img
 .main-our-categories-title
   margin-top: 20px
   text-align: center
+  &:hover
+    text-decoration: underline
   a
     color: #222
     font-size: 14px
     font-weight: 400
+
 .popular-items-container
   .main-our-categories-list-item
     margin-bottom: 120px
@@ -831,7 +842,7 @@ img
     color: #222
     text-decoration: underline
   a:hover
-    text-decoration: non
+    text-decoration: none
 .more-info-list-item:last-of-type
   margin-bottom: 0
 .more-info-empty
@@ -869,6 +880,7 @@ img
   padding-left: 1px
 .footer-nav-item
   margin-bottom: 10px
+  color: $white
 .footer-info
   color: #fff
   margin: 40px 0
@@ -935,8 +947,6 @@ img
     font-size: 11px
 .metro-adress
   display: block
-.metro-items-container
-  margin-bottom: 100px
 .metro-about-us
   .main-about-us-text:last-of-type
     margin-top: 80px
@@ -963,14 +973,24 @@ img
 .catalog-tab
   @include list-type-none
   justify-content: flex-start
-  .catalog-tab-item
+  .catalog-tab-submenu
+    @include list-type-none
+    margin-left: 25px
+  .catalog-tab-submenu-item
+    a
+      font-size: 14px !important
+  .catalog-tab-submenu-item:last-of-type
+    margin-right: 0
+  .catalog-tab-item,.catalog-tab-submenu-item
     margin-right: 25px
     a
       color: #222
-  .catalog-tab-item.active
-    border-bottom: 2px solid #222
-    a
+  .catalog-tab-item
+    &>a
       font-size: 16px
+  .catalog-tab-item.active
+    &>a
+      border-bottom: 2px solid #222
     a:hover
       text-decoration: none
   .catalog-tab-item:not(:first-of-type)
@@ -1115,7 +1135,7 @@ ul.catalog-filter-list
   background-size: cover
   background-repeat: no-repeat
   background-position: center
-  transition: 1s ease-in-out
+  transition: 500ms ease-in-out
   &>a
     display: flex
     flex-direction: column

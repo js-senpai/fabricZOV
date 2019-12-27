@@ -166,14 +166,24 @@
     margin-right: 0
     position: relative
     display: block
-  .catalog-tab .catalog-tab-item
+  .catalog-tab .catalog-tab-item,.catalog-tab-submenu
     margin-right: 0
     display: none
+  .catalog-tab-submenu
+    width: 100%
+  .catalog-tab-submenu-item
+    margin-right: 0
+    margin-left: 0
+  .catalog-tab-submenu .catalog-tab-submenu-item>a
+    font-weight: 400 !important
+    font-size: 12px !important
   .catalog-tab .catalog-tab-item.active
-    border-bottom: 0
     display: flex
     justify-content: space-between
     align-items: center
+    flex-wrap: wrap
+    &>a
+      border-bottom: 0
   .catalog-tab-item-button
     display: block
   .more-info-catalog

@@ -10,11 +10,19 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     lazyLoadInstance.update();
     //Переключение меню каталога
-    toggleElement('.toggle-cat','.bottom-header-cat-menu');
+    $('.bottom-header-cat-container').mouseenter(function () {
+        $('.bottom-header-cat-menu').fadeIn('slow');
+    });
+    $('.bottom-header-cat-menu').mouseleave(function () {
+       $(this).fadeOut('slow');
+    });
     //Переключение поиска по сайту
     toggleElement('.search-button','.search-container');
-    $('.search-container').mouseleave(function () {
-       $(this).fadeOut('slow');
+    $(document).mouseup(function (e) {
+        const container = $(".search-container");
+        if (container.has(e.target).length === 0){
+            container.fadeOut('slow');
+        }
     });
     //Переключение меню категорий в мобильной версии
     toggleElement('.mobile-toggle-cat','.mobile-header-nav');
@@ -118,6 +126,7 @@ document.addEventListener("DOMContentLoaded", function() {
    $('.catalog-tab-item-button').click(function () {
       $(this).toggleClass('active');
       $('.catalog-tab-item:not(.active)').fadeToggle('slow');
+      $('.catalog-tab-submenu').fadeToggle('slow');
    });
    $('.mobile-catalog-filter-button').click(function () {
       $(this).toggleClass('active');
