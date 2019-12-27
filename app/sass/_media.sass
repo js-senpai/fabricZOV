@@ -1,13 +1,44 @@
 @import "vars"
-
+//For slider
+@media screen and (max-width: 1370px)
+  .thumb-main-slider-item:not(:last-of-type)
+    margin-right: 1.4%
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1161px)
    .bottom-header-item:last-of-type
     margin-right: 80px
    .main-about-us-dec-title
      display: none
+@media screen and (min-width: 1151px)
+  .mobile-main-banners
+    position: absolute
+    display: none
+    right: -50%
+    top: 0
+    height: 602px
+    .mobile-main-banners-title,.more
+      display: block
+      width: 100%
+    .mobile-main-banners-title
+      font-size: 16px
+      width: 50%
+      line-height: 24px
+    .more
+      font-size: 12px
+  .mobile-main-banners-item a
+    flex-wrap: wrap
+    padding-left: 30px
+    flex-direction: column
+    justify-content: space-between
+    height: calc(442px/3)
+    padding-right: 30px
+  .mobile-main-banners.active
+    right: 0
+    display: block
+  .banner-sales-btn.active
+    right: 228px
 @media screen and (max-width: 1150px)
-   .mobile-header,.mobile-sales-btn,.mobile-main-banners,.mobile-main-our-categories
+   .mobile-header,.mobile-sales-btn,.mobile-main-banners.active,.mobile-main-our-categories
      display: block
    .top-head,.bottom-header,.banner-sales-btn,.btn.btn-more,.main-banner-list,.main-about-us-item:first-of-type,.our-categories,.more-info-empty
      display: none
@@ -343,8 +374,9 @@
         margin-top: 0
     .main-banner
       padding-top: 25px
-      padding-bottom: 31px
+      padding-bottom: 25px
     .mobile-main-banners
+      margin-top: 20px
       .mobile-main-banners-item a
         padding-left: 10px
         padding-right: 10px

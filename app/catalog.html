@@ -117,6 +117,12 @@
 							<li class="top-header-submenu-item">
 								<a href="#">Вакансии</a>
 							</li>
+							<li class="top-header-submenu-item">
+								<a href="#">Вакансии</a>
+							</li>
+							<li class="top-header-submenu-item">
+								<a href="#">Вакансии</a>
+							</li>
 						</ul>
 					</li>
 					<li class="top-header-menu-item"><a href="#">Акции</a></li>
@@ -213,11 +219,17 @@
 				</div>
 			</div>
 		</div>
+		<div class="search-container">
+			<div class="flex-container">
+				<input type="text" class="search-text" placeholder="Введите вашу фразу">
+				<button class="fas fa-search search-submit"></button>
+			</div>
+		</div>
 	</div>
 	<section class="main-banner">
 		<div class="container flex-container">
 			<ul class="main-banner-list padding-container">
-				<li class="main-banner-list-item active">
+				<li class="main-banner-list-item">
 					<a href="#">
 						<div class="main-banner-list-top">
 							<span class="main-banner-text-dec">01</span>
@@ -303,15 +315,15 @@
 		<div class="container">
             <div class="padding-container">
                 <ul class="flex-container catalog-tab">
-                    <li class="catalog-tab-item active"><a href="#kitchen">Кухни фабрики ЗОВ</a><span class="fas fa-chevron-down catalog-tab-item-button"></span></li>
-                    <li class="catalog-tab-item"><a href="#doors">Массив дерева</a></li>
-                    <li class="catalog-tab-item"><a href="#plastic">Пластик</a></li>
-                    <li class="catalog-tab-item"><a href="#akril">Акрил</a></li>
-                    <li class="catalog-tab-item"><a href="#shpon">Шпон</a></li>
-                    <li class="catalog-tab-item"><a href="#vitrage">Витражи к кухням</a></li>
-                    <li class="catalog-tab-item disabled"><a href="#tech">Бытовая техника</a></li>
-                    <li class="catalog-tab-item disabled"><a href="#moyki">Мойки</a></li>
-                    <li class="catalog-tab-item disabled"><a href="#smesiteli">Смесители</a></li>
+                    <li class="catalog-tab-item active"><a href="#">Кухни фабрики ЗОВ</a><span class="fas fa-chevron-down catalog-tab-item-button"></span></li>
+                    <li class="catalog-tab-item"><a href="#">Массив дерева</a></li>
+                    <li class="catalog-tab-item"><a href="#">Пластик</a></li>
+                    <li class="catalog-tab-item"><a href="#">Акрил</a></li>
+                    <li class="catalog-tab-item"><a href="#">Шпон</a></li>
+                    <li class="catalog-tab-item"><a href="#">Витражи к кухням</a></li>
+                    <li class="catalog-tab-item"><a href="#">Бытовая техника</a></li>
+                    <li class="catalog-tab-item"><a href="#">Мойки</a></li>
+                    <li class="catalog-tab-item"><a href="#">Смесители</a></li>
                 </ul>
             </div>
 		</div>
@@ -330,9 +342,9 @@
 					</div>
 					<ul class="catalog-filter-list">
 						<li class="catalog-filter-list-item"><input type="checkbox" id="modern"><label for="modern">Модерн</label></li>
-						<li class="catalog-filter-list-item"><input type="checkbox" id="classic" disabled><label for="classic">Классика</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="classic"><label for="classic">Классика</label></li>
 						<li class="catalog-filter-list-item"><input type="checkbox" id="provans"><label for="provans">Прованс</label></li>
-						<li class="catalog-filter-list-item"><input type="checkbox" id="skand" disabled><label for="skand">Скандинавский</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="skand"><label for="skand">Скандинавский</label></li>
 						<li class="catalog-filter-list-item"><input type="checkbox" id="hitek" disabled><label for="hitek">Хай-тек</label></li>
 					</ul>
 				</li>
@@ -341,11 +353,11 @@
 						<span class="catalog-filter-name">Фасады</span><span class="fas fa-chevron-down catalog-filter-button"></span>
 					</div>
 					<ul class="catalog-filter-list">
-						<li class="catalog-filter-list-item"><input type="checkbox" id="modern"><label for="modern">Модерн</label></li>
-						<li class="catalog-filter-list-item"><input type="checkbox" id="classic"><label for="classic">Классика</label></li>
-						<li class="catalog-filter-list-item"><input type="checkbox" id="provans"><label for="provans">Прованс</label></li>
-						<li class="catalog-filter-list-item"><input type="checkbox" id="skand"><label for="skand">Скандинавский</label></li>
-						<li class="catalog-filter-list-item"><input type="checkbox" id="hitek"><label for="hitek">Хай-тек</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="modern1"><label for="modern1">Модерн</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="classic1"><label for="classic1">Классика</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="provans1"><label for="provans1">Прованс</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="skand1"><label for="skand1">Скандинавский</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="hitek1"><label for="hitek1">Хай-тек</label></li>
 					</ul>
 				</li>
 				<li class="catalog-filter-item">
@@ -353,11 +365,11 @@
 						<span class="catalog-filter-name">Форма кухни</span><span class="fas fa-chevron-down catalog-filter-button"></span>
 					</div>
 					<ul class="catalog-filter-list">
-						<li class="catalog-filter-list-item"><input type="checkbox" id="modern"><label for="modern">Модерн</label></li>
-						<li class="catalog-filter-list-item"><input type="checkbox" id="classic"><label for="classic">Классика</label></li>
-						<li class="catalog-filter-list-item"><input type="checkbox" id="provans"><label for="provans">Прованс</label></li>
-						<li class="catalog-filter-list-item"><input type="checkbox" id="skand"><label for="skand">Скандинавский</label></li>
-						<li class="catalog-filter-list-item"><input type="checkbox" id="hitek"><label for="hitek">Хай-тек</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="modern2"><label for="modern2">Модерн</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="classic2"><label for="classic2">Классика</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="provans2"><label for="provans2">Прованс</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="skand2"><label for="skand2">Скандинавский</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="hitek2"><label for="hitek2">Хай-тек</label></li>
 					</ul>
 				</li>
 				<li class="catalog-filter-item">
@@ -365,11 +377,11 @@
 						<span class="catalog-filter-name">Цвет</span><span class="fas fa-chevron-down catalog-filter-button"></span>
 					</div>
 					<ul class="catalog-filter-list">
-						<li class="catalog-filter-list-item"><input type="checkbox" id="modern"><label for="modern">Модерн</label></li>
-						<li class="catalog-filter-list-item"><input type="checkbox" id="classic"><label for="classic">Классика</label></li>
-						<li class="catalog-filter-list-item"><input type="checkbox" id="provans"><label for="provans">Прованс</label></li>
-						<li class="catalog-filter-list-item"><input type="checkbox" id="skand"><label for="skand">Скандинавский</label></li>
-						<li class="catalog-filter-list-item"><input type="checkbox" id="hitek"><label for="hitek">Хай-тек</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="modern3"><label for="modern3">Модерн</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="classic3"><label for="classic3">Классика</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="provans3"><label for="provans3">Прованс</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="skand3"><label for="skand3">Скандинавский</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="hitek3"><label for="hitek3">Хай-тек</label></li>
 					</ul>
 				</li>
 				<li class="catalog-filter-item">
@@ -377,11 +389,11 @@
 						<span class="catalog-filter-name">Размер</span><span class="fas fa-chevron-down catalog-filter-button"></span>
 					</div>
 					<ul class="catalog-filter-list">
-						<li class="catalog-filter-list-item"><input type="checkbox" id="modern"><label for="modern">Модерн</label></li>
-						<li class="catalog-filter-list-item"><input type="checkbox" id="classic"><label for="classic">Классика</label></li>
-						<li class="catalog-filter-list-item"><input type="checkbox" id="provans"><label for="provans">Прованс</label></li>
-						<li class="catalog-filter-list-item"><input type="checkbox" id="skand"><label for="skand">Скандинавский</label>/li>
-						<li class="catalog-filter-list-item"><input type="checkbox" id="hitek"><label for="hitek">Хай-тек</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="modern4"><label for="modern4">Модерн</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="classic4"><label for="classic4">Классика</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="provans4"><label for="provans4">Прованс</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="skand4"><label for="skand4">Скандинавский</label></li>
+						<li class="catalog-filter-list-item"><input type="checkbox" id="hitek4"><label for="hitek4">Хай-тек</label></li>
 					</ul>
 				</li>
 			</ul>
@@ -625,86 +637,7 @@
 			</ul>
 		</div>
 	</div>
-    <div id="doors" class="tab">
-        <div class="container catalog-filter-container">
-            <ul class="padding-container flex-container catalog-filter">
-                <li class="catalog-filter-item">
-                    <div class="flex-container catalog-filter-header">
-                        <span class="catalog-filter-name">Стиль</span><span class="fas fa-chevron-down catalog-filter-button"></span>
-                    </div>
-                    <ul class="catalog-filter-list">
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="modern"><label for="modern">Модерн</label></li>
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="classic" disabled><label for="classic">Классика</label></li>
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="provans"><label for="provans">Прованс</label></li>
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="skand" disabled><label for="skand">Скандинавский</label></li>
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="hitek" disabled><label for="hitek">Хай-тек</label></li>
-                    </ul>
-                </li>
-                <li class="catalog-filter-item">
-                    <div class="flex-container catalog-filter-header">
-                        <span class="catalog-filter-name">Фасады</span><span class="fas fa-chevron-down catalog-filter-button"></span>
-                    </div>
-                    <ul class="catalog-filter-list">
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="modern"><label for="modern">Модерн</label></li>
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="classic"><label for="classic">Классика</label></li>
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="provans"><label for="provans">Прованс</label></li>
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="skand"><label for="skand">Скандинавский</label></li>
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="hitek"><label for="hitek">Хай-тек</label></li>
-                    </ul>
-                </li>
-                <li class="catalog-filter-item">
-                    <div class="flex-container catalog-filter-header">
-                        <span class="catalog-filter-name">Форма кухни</span><span class="fas fa-chevron-down catalog-filter-button"></span>
-                    </div>
-                    <ul class="catalog-filter-list">
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="modern"><label for="modern">Модерн</label></li>
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="classic"><label for="classic">Классика</label></li>
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="provans"><label for="provans">Прованс</label></li>
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="skand"><label for="skand">Скандинавский</label></li>
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="hitek"><label for="hitek">Хай-тек</label></li>
-                    </ul>
-                </li>
-                <li class="catalog-filter-item">
-                    <div class="flex-container catalog-filter-header">
-                        <span class="catalog-filter-name">Цвет</span><span class="fas fa-chevron-down catalog-filter-button"></span>
-                    </div>
-                    <ul class="catalog-filter-list">
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="modern"><label for="modern">Модерн</label></li>
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="classic"><label for="classic">Классика</label></li>
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="provans"><label for="provans">Прованс</label></li>
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="skand"><label for="skand">Скандинавский</label></li>
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="hitek"><label for="hitek">Хай-тек</label></li>
-                    </ul>
-                </li>
-                <li class="catalog-filter-item">
-                    <div class="flex-container catalog-filter-header">
-                        <span class="catalog-filter-name">Размер</span><span class="fas fa-chevron-down catalog-filter-button"></span>
-                    </div>
-                    <ul class="catalog-filter-list">
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="modern"><label for="modern">Модерн</label></li>
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="classic"><label for="classic">Классика</label></li>
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="provans"><label for="provans">Прованс</label></li>
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="skand"><label for="skand">Скандинавский</label>/li>
-                        <li class="catalog-filter-list-item"><input type="checkbox" id="hitek"><label for="hitek">Хай-тек</label></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="padding-container flex-container catalog-filter-bottom">
-                <li class="catalog-filter-bottom-item">Выбрано: <span class="filter-col">394</span></li>
-                <li class="catalog-filter-bottom-item reset-filters">Сбросить фильтр</li>
-                <li class="catalog-filter-bottom-item flex-container"><span class="sort-name">Сортировать по:</span>
-                    <ul class="sort-date">
-                        <li class="sort-date-item">
-                            <span class="sort-date-current">Новизне</span><span class="fas fa-chevron-down sort-date-btn"></span>
-                            <ul class="sort-date-list">
-                                <li class="sort-date-item">По популярности</li>
-                                <li class="sort-date-item">По низкой цене</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+
         <div class="container">
             <ul class="flex-container padding-container catalog">
                 <li class="lazy catalog-item" data-bg="url('img/_src/body/catalog/catalog-1.jpg')">
