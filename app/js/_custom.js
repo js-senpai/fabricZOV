@@ -34,7 +34,25 @@ document.addEventListener("DOMContentLoaded", function() {
     $('.banner-sales-btn').click(function (e) {
         e.preventDefault();
         $(this).toggleClass('active');
-        $('.mobile-main-banners').toggleClass('active');
+        if($(this).hasClass('active')){
+            $(this).animate({
+                'right': '228px'
+            },'slow','swing');
+            $('.mobile-main-banners').animate({
+                'right': '0'
+            },'slow','linear');
+        }else{
+            $('.mobile-main-banners').animate({
+                'right': '-30%'
+            },'slow','linear');
+            let these = $(this);
+            setTimeout(function () {
+                these.animate({
+                    'right': '-60px'
+                },'slow','linear');
+            },800);
+        }
+
     });
     $('.mobile-sales-btn').click(function (e) {
         e.preventDefault();
