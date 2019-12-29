@@ -200,4 +200,12 @@ document.addEventListener("DOMContentLoaded", function() {
         ],
     });
     $('.product-main-slider .slick-dots button').text('');
+    $('.main-our-categories-title').hover(
+        function () {
+            $(this).prev('a').css({'background': '#0000007a'});
+        },
+        function () {
+            $(this).prev('a').css({'background': 'none'});
+        }
+    )
 });

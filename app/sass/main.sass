@@ -69,6 +69,7 @@ img
 .btn:hover
   background-color: #010101
   border: 1px solid #010101
+  text-decoration: none
 .title
   font-size: 36px
   color: #000
@@ -290,6 +291,7 @@ img
     background-color: #00000026
   a:hover
     background-color: #000
+    text-decoration: none
 .contacts-item,.top-header-menu-item
   font-size: 12px
   color: #7c8287
@@ -312,6 +314,7 @@ img
   position: absolute
   top: 25px
   left: 0
+  z-index: 1
   background-color: #fff
   @include list-type-none
   padding: 5px 20px 5px 10px
@@ -380,7 +383,7 @@ img
   margin-right: 25px
 .col-advantages
   display: inline-block
-  margin-left: 13px
+  margin-left: 10px
   font-size: 10px
   padding: 1px 6px
   height: 21px
@@ -792,7 +795,6 @@ img
     color: #222
     font-size: 14px
     font-weight: 400
-
 .popular-items-container
   .main-our-categories-list-item
     margin-bottom: 120px
@@ -1284,6 +1286,8 @@ ul.catalog-filter-list
   margin-top: 18px
   .slick-track
     transform: none !important
+    display: flex
+    flex-wrap: nowrap
   .slick-current
     border: 3px solid #383838
 .thumb-main-slider-item
@@ -1291,7 +1295,7 @@ ul.catalog-filter-list
   border: 3px solid transparent
   width: calc(90%/5) !important
 .thumb-main-slider-item:not(:last-of-type)
-  margin-right: 1.2%
+  margin-right: 2%
 .product-container
   margin-bottom: 84px
 .product-container-item
