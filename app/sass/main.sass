@@ -681,8 +681,8 @@ img
 .main-about-us-subcontainer
   height: -webkit-fill-available
   padding: 30px 35px
-  background: url("../img/_src/body/main/advantages-subbg.png") no-repeat top center
-  background-size: cover
+  background: url("../img/_src/body/main/advantages-subbg.png") no-repeat  center
+  background-size: auto
   display: flex
   flex-direction: column
   justify-content: flex-end
@@ -692,6 +692,8 @@ img
   font-size: 30px
   font-weight: 700
   line-height: 40px
+  margin-bottom: 30px
+  margin-left: -5px
 .main-about-us-item
   .subtitle,.title
     color: #000
@@ -1039,6 +1041,8 @@ img
   padding: 15px
   margin-right: 23px
   position: relative
+.catalog-filter-item:last-of-type
+  margin-right: 0
 .catalog-filter-name
   color: #353c41
 .catalog-filter-header
@@ -1197,6 +1201,13 @@ ul.catalog-filter-list
     .fas
       font-size: 9px
       padding-right: 2px
+    .fa-download:before
+      content: ''
+      display: inline-block
+      width: 9px
+      height: 9px
+      background: url('../img/icons/download.svg') no-repeat center
+      background-size: cover
 //Pagination
 .pagination
   @include list-type-none
@@ -1210,11 +1221,15 @@ ul.catalog-filter-list
   text-align: center
   font-family: "Open Sans", sans-serif
   margin-right: 10px
+  transition: none
   a
     display: block
     width: 100%
     height: 100%
     color: #222
+    transition: none
+  a:hover
+    transition: none
 .pagination-item.active,.pagination-item:hover
   background-color: #000
   text-decoration: none

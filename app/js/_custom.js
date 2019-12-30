@@ -19,9 +19,21 @@ document.addEventListener("DOMContentLoaded", function() {
     //Переключение поиска по сайту
     toggleElement('.search-button','.search-container');
     $(document).mouseup(function (e) {
-        const container = $(".search-container");
-        if (container.has(e.target).length === 0){
-            container.fadeOut('slow');
+        const search_container = $(".search-container"),
+              catalog_filter =  $('.catalog-filter-item'),
+              sort_item = $('.sort-date-item');
+        if (search_container.has(e.target).length === 0){
+            search_container.fadeOut('slow');
+        }
+        if (catalog_filter.has(e.target).length === 0){
+            $(this).removeClass('active');
+            $(this).find('.catalog-filter-list').fadeOut('slow');
+            $(this).find('.catalog-filter-button').removeClass('active');
+        }
+        if (sort_item.has(e.target).length === 0){
+            $(this).removeClass('active');
+            $(this).find('.sort-date-btn').removeClass('active');
+            $(this).find('.sort-date-list').fadeOut('slow');
         }
     });
     //Переключение меню категорий в мобильной версии
@@ -67,22 +79,13 @@ document.addEventListener("DOMContentLoaded", function() {
        $(this).find('.catalog-filter-list').fadeIn('slow');
        $(this).find('.catalog-filter-button').toggleClass('active');
     });
-    $('.catalog-filter-item').mouseleave(function () {
-        $(this).removeClass('active');
-        $(this).find('.catalog-filter-list').fadeOut('slow');
-        $(this).find('.catalog-filter-button').removeClass('active');
-    });
+
     $('.catalog-filter-item.active').click(function () {
         $(this).find('.catalog-filter-list').fadeOut('slow');
     });
     $('.sort-date-item').click(function () {
        $(this).find('.sort-date-btn').toggleClass('active');
        $(this).find('.sort-date-list').fadeToggle('slow');
-    });
-    $('.sort-date-item').mouseleave(function () {
-       $(this).removeClass('active');
-       $(this).find('.sort-date-btn').removeClass('active');
-        $(this).find('.sort-date-list').fadeOut('slow');
     });
     $('.main-banner-list-item').hover(
         function () {
