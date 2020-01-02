@@ -15,13 +15,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     $('.bottom-header-cat-menu').mouseleave(function () {
        $(this).fadeOut('slow');
+        $('.bottom-header-cat-menu-item.active').removeClass('active');
     });
     //Переключение поиска по сайту
     toggleElement('.search-button','.search-container');
     $(document).mouseup(function (e) {
         const search_container = $(".search-container"),
               catalog_filter =  $('.catalog-filter-item'),
-              sort_item = $('.sort-date-item');
+              sort_item = $('.sort-date-item'),
+              banner_main = $('.mobile-main-banners');
         if (search_container.has(e.target).length === 0){
             search_container.fadeOut('slow');
         }
@@ -34,6 +36,11 @@ document.addEventListener("DOMContentLoaded", function() {
             $(this).removeClass('active');
             $(this).find('.sort-date-btn').removeClass('active');
             $(this).find('.sort-date-list').fadeOut('slow');
+        }
+        if(banner_main.has(e.target).length === 0){
+            $('.mobile-main-banners').animate({
+                'right': '-287px'
+            },'slow','linear');
         }
     });
     //Переключение меню категорий в мобильной версии
@@ -190,7 +197,7 @@ document.addEventListener("DOMContentLoaded", function() {
         slidesToShow: 5,
         slidesToScroll: 1,
         arrows: false,
-        focusOnSelect: false,
+        focusOnSelect: true,
         adaptiveHeight: true,
         asNavFor: '.product-main-slider'
     });

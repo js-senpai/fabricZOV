@@ -408,7 +408,7 @@ img
   color: #ffffff
   background: transparent
 .bottom-header-cat-menu,.bottom-header-cat-submenu
-  padding: 5px 20px
+  padding: 5px 0
   width: 166px
   text-transform: uppercase
 .bottom-header-cat-menu
@@ -445,10 +445,10 @@ img
   top: -5px
   background-color: #484848
   @include list-type-none
-  left: -206px
-  width: 100%
+  left: -166px
 .bottom-header-cat-submenu-item
   text-align: right
+  padding-right: 20px
 //Mobile Banners
 .mobile-main-banners
   display: none
@@ -1276,21 +1276,21 @@ ul.catalog-filter-list
     text-align: center
     width: 52px
     height: 52px
-    background-color: #131313
-    color: $white
+    background-color: #ffffff
+    color: #5f6568
     line-height: 52px
     border-radius: 50%
     opacity: 0.9
     top: 45%
     cursor: pointer
+    transition: 500ms ease-in-out
+  .fa-chevron-left.slick-arrow:hover,.fa-chevron-right.slick-arrow:hover
+    background-color: #131313
+    color: $white
   .fa-chevron-left.slick-arrow
     left: 10px
   .fa-chevron-right.slick-arrow
     right: 10px
-  .slick-arrow.slick-disabled
-    background-color: #ffffff
-    opacity: 0.54
-    color: #5f6568
 .product-main-slider-item
   height: 455px
 .product-main-slider-item,.thumb-main-slider-item
@@ -1309,6 +1309,7 @@ ul.catalog-filter-list
   height: 122px
   border: 3px solid transparent
   width: calc(90%/5) !important
+  cursor: pointer
 .thumb-main-slider-item:not(:last-of-type)
   margin-right: 2%
 .product-container
