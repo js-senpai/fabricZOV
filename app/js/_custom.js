@@ -210,12 +210,20 @@ document.addEventListener("DOMContentLoaded", function() {
         ],
     });
     $('.product-main-slider .slick-dots button').text('');
-    $('.main-our-categories-title').hover(
+    $('.main-our-categories-title,.metro-adress-container').hover(
         function () {
             $(this).prev('a').css({'background': '#0000007a'});
         },
         function () {
             $(this).prev('a').css({'background': 'none'});
         }
-    )
+    );
+    $('.metro-adress-container').hover(
+        function () {
+            $(this).prev('a').css({'background': '#0000007a'});
+        },
+        function () {
+            $(this).prev('a').css({'background': 'none'});
+        }
+    );g
 });
