@@ -1021,14 +1021,17 @@ img
   background-size: auto
   background-position: center
   border-radius: 3px
-.shop-btn.active
-  background-color: #000
 .shop-text
   padding-left: 15px
-  max-width: 113px
+  max-width: 120px
   font-family: "Open Sans", sans-serif
   font-size: 14px
   line-height: 19px
+  display: none
+.list-shop-item:hover .shop-btn
+  background-color: #000
+.list-shop-item:hover .shop-text
+  display: block
 // Filter
 .catalog-filter-container
   margin-top: 50px
@@ -1202,7 +1205,7 @@ ul.catalog-filter-list
     color: #222
     .fas
       font-size: 9px
-      padding-right: 2px
+      padding-right: 5px
     .fa-download:before
       content: ''
       display: inline-block
