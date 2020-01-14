@@ -169,7 +169,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 items: 3
             },
             900: {
-                items: 9
+                items: 5
+            },
+            1177:{
+                items: 5
             }
         }
     });
@@ -199,7 +202,21 @@ document.addEventListener("DOMContentLoaded", function() {
         arrows: false,
         focusOnSelect: true,
         adaptiveHeight: true,
-        asNavFor: '.product-main-slider'
+        asNavFor: '.product-main-slider',
+        responsive: [
+            {
+                breakpoint: 980,
+                settings: {
+                    slidesToShow: 5
+                }
+            },
+            {
+                breakpoint: 1180,
+                settings: {
+                    slidesToShow: 4
+                }
+            }
+        ]
     });
     $('[data-fancybox="images"]').fancybox({
         buttons : [
@@ -225,5 +242,5 @@ document.addEventListener("DOMContentLoaded", function() {
         function () {
             $(this).prev('a').css({'background': 'none'});
         }
-    );g
+    );
 });
