@@ -152,9 +152,7 @@ document.addEventListener("DOMContentLoaded", function() {
       $('.catalog-filter-item:not(.mobile-catalog-filter-item)').fadeToggle('slow');
       $('.catalog-filter-bottom').toggleClass('active');
    });
-   $('.catalog-tab-item:not(:first-of-type)').mouseenter(function () {
-      $(this).find('a').css({'color': '#222'});
-   });
+
     $('.docs-list').owlCarousel({
         autoplayHoverPause: true,
         autoplay: false,

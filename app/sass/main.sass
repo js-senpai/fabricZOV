@@ -1006,10 +1006,12 @@ img
   .catalog-tab-item:not(:first-of-type)
     a
       color: #929292
+    a:hover
+      color: #000
 .list-shop-btn
   display: none
   @include list-type-none
-  position: absolute
+  position: fixed
   left: 50px
   top: 90px
 .list-shop-item
@@ -1031,6 +1033,7 @@ img
   font-size: 14px
   line-height: 19px
   display: none
+  align-self: center
 .list-shop-item:hover .shop-btn
   background-color: #000
 .list-shop-item:hover .shop-text
