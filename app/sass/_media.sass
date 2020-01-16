@@ -20,20 +20,16 @@
 @media screen and (max-width: 1370px)
   .thumb-main-slider-item:not(:last-of-type)
     margin-right: 2%
-  #main
-    .main-about-us-dec-title
-      display: none
+  .main-about-us-item:first-of-type
+    width: 40%
+@media screen and (max-width: 1228px)
+  .main-about-us-item:first-of-type
+    width: 45%
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1161px)
    .bottom-header-item:last-of-type
     margin-right: 80px
-@media screen and (min-width: 1181px)
-  .product
-    .popular-items-container .main-our-categories-list-item
-      margin-bottom: 40px
-  .metro-list
-    .main-our-categories-list-item:nth-child(5),.main-our-categories-list-item:nth-child(6),.main-our-categories-list-item:nth-child(7),.main-our-categories-list-item:nth-child(8)
-      margin-bottom: 40px
+@media (min-width: 981px)
   .mobile-main-banners
     position: absolute
     display: block
@@ -58,6 +54,13 @@
     padding-right: 30px
   .mobile-main-banners.active
     right: 0
+@media screen and (min-width: 1181px)
+  .product
+    .popular-items-container .main-our-categories-list-item
+      margin-bottom: 40px
+  .metro-list
+    .main-our-categories-list-item:nth-child(5),.main-our-categories-list-item:nth-child(6),.main-our-categories-list-item:nth-child(7),.main-our-categories-list-item:nth-child(8)
+      margin-bottom: 65px
   .main
     .more-info-item:nth-of-type(2)
       .more
@@ -65,8 +68,24 @@
   .md-lead-button
     display: none
 @media screen and (max-width: 1180px)
+  .more-info-price:after
+    margin: 10px 0 20px
+  .footer-info
+    margin: 40px 0
+  .description .description-text
+    width: 90%
+  .breadcrumbs
+    flex-wrap: wrap
+  .main-about-us-item .more
+    margin-top: 40px
+  .main-about-us-item .main-about-us-text
+    width: 100%
+  .main-about-us-dec-title
+    left: -270px
+  .search-container
+    left: 20%
   .container
-    max-width: 984px
+    max-width: 995px
   .contacts-item:first-of-type
     display: none
   .top-header-menu-container
@@ -89,7 +108,7 @@
   .main-our-categories-list-item
     width: calc(100%/3.1)
   .more-info-item:nth-of-type(2),.more-info-item:nth-of-type(3)
-    width: 40%
+    width: 55%
   .more-info-item:nth-of-type(1)
     width: 20%
   .main
@@ -107,15 +126,20 @@
   .catalog-docs-item:last-of-type
     width: 60%
   .catalog-item
-    margin-bottom: 30px
+    margin-bottom: 20px
     width: 49%
+    height: 304px
   .catalog-item:nth-of-type(odd)
     margin-right: 2%
+  .catalogs .catalog-info-text,.catalog-info
+    width: 100%
+  .catalog-info .padding-container
+    padding: inherit
   .page
     .popular-items-container:not(.metro-items-container) .main-our-categories-list-item:last-of-type
       display: none
   .more-info-product .more-info-item:nth-of-type(2)
-    padding-left: 35px
+    padding-left: 0
   .product-container-item
     .lead-button-container
       display: none
@@ -125,7 +149,16 @@
     height: 58px
     justify-content: flex-start
     padding-left: 23px
-@media screen and (max-width: 980px)
+  .main-advantages-text
+    width: 80%
+@media screen and (max-width: 1132px)
+  .main-about-us-dec-title
+    display: none
+@media screen and (max-width: 992px)
+   .last-product-container
+     .main-our-categories-list
+       li.main-our-categories-list-item
+         margin-bottom: 90px
    .lead-button-item
      width: calc(100%/3.5)
    .mobile-header,.mobile-sales-btn,.mobile-main-banners.active,.mobile-main-our-categories
@@ -353,6 +386,31 @@
   .main-our-categories-text
     font-size: 13px
     margin-top: 17px
+  #footer
+    padding-top: 30px
+    padding-bottom: 30px
+    text-align: center
+    font-size: 12px
+    .flex-container
+      flex-wrap: wrap
+    .footer-item
+      width: 100% !important
+  .footer-logo,.footer-item:nth-of-type(2),.footer-item:nth-of-type(3),.footer-item .contacts
+    display: none
+  .footer-info.mobile-footer-tel
+    display: block
+    a
+      display: block
+  .copyright
+    margin-top: 0
+  .footer-info
+    margin: 20px auto 0 auto
+  .footer-item:last-of-type
+    display: flex
+    flex-direction: column
+  .politic-more
+    order: -3
+    margin-top: 20px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 800px)
   .mobile-main-our-categories
@@ -382,31 +440,6 @@
       margin-right: 11px
     .main-our-categories-list-item:nth-of-type(even)
       margin-right: 0
-  #footer
-    padding-top: 30px
-    padding-bottom: 30px
-    text-align: center
-    font-size: 12px
-    .flex-container
-      flex-wrap: wrap
-    .footer-item
-      width: 100% !important
-  .footer-logo,.footer-item:nth-of-type(2),.footer-item:nth-of-type(3),.footer-item .contacts
-    display: none
-  .footer-info.mobile-footer-tel
-    display: block
-    a
-      display: block
-  .copyright
-    margin-top: 0
-  .footer-info
-    margin: 20px auto 0 auto
-  .footer-item:last-of-type
-    display: flex
-    flex-direction: column
-  .politic-more
-    order: -3
-    margin-top: 20px
   .catalog
     flex-wrap: wrap
     .catalog-item

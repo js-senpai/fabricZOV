@@ -171,6 +171,9 @@ document.addEventListener("DOMContentLoaded", function() {
             },
             1177:{
                 items: 5
+            },
+            1181:{
+                items: 9
             }
         }
     });
@@ -241,4 +244,10 @@ document.addEventListener("DOMContentLoaded", function() {
             $(this).prev('a').css({'background': 'none'});
         }
     );
+    $(window).scroll(function(){
+        if($(window).scrollTop()>725){
+           $('.list-shop-btn').css({'position':'fixed'});
+        }else if($(window).scrollTop()<725){$('.list-shop-btn').css({'position':'absolute'});
+        }
+    });
 });

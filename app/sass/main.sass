@@ -626,21 +626,22 @@ img
     justify-content: flex-start
 .main-about-us-item:first-of-type
   width: 35%
-  margin-right: 9%
+  margin-right: 3%
 .main-about-us-item:last-of-type
-  width: 50%
+  width: 60%
 .main-about-us-item
   position: relative
   height: 529px
-  .subtitle
-    margin-top: 36px
   .title
     text-transform: uppercase
-    line-height: 47px
+    line-height: 36px
   .main-about-us-text
     width: 82%
   .more
     margin-top: 53px
+.contact-about-us-item
+  .subtitle
+    margin-top: 47px
 .main-about-us-dec-title
   font-size: 30px
   letter-spacing: 6.6px
@@ -720,6 +721,10 @@ img
   font-size: 15px
   color: #666666
   margin-top: 24px
+.last-product-container
+  .main-our-categories-list
+    li.main-our-categories-list-item
+      margin-bottom: 63px
 .mobile-main-our-categories
   display: none
   .more
@@ -799,7 +804,7 @@ img
     font-weight: 400
 .popular-items-container
   .main-our-categories-list-item
-    margin-bottom: 120px
+    margin-bottom: 90px
   .more
     display: none
 //More info
@@ -872,11 +877,11 @@ img
   color: $white
   margin-top: 20px
 .footer-item:nth-of-type(1)
-  width: 45%
+  width: 69%
   margin-right: 5%
 .footer-item:nth-of-type(2),.footer-item:nth-of-type(3)
-  width: 30%
-  margin-right: 8%
+  margin-right: 2%
+  width: 68%
 .footer-title
   font-size: 18px
   font-weight: bold
@@ -891,7 +896,7 @@ img
   color: $white
 .footer-info
   color: #fff
-  margin: 40px 0
+  margin: 30px 0
 .politic-more
   text-decoration: underline
   &:hover
@@ -975,8 +980,6 @@ img
   text-align: center
   margin: 39px auto 91px auto
   width: 80%
-  .padding-container
-    padding: 0 150px
 //Tabs
 .catalog-tab-container
   position: relative
@@ -1011,7 +1014,7 @@ img
 .list-shop-btn
   display: none
   @include list-type-none
-  position: fixed
+  position: absolute
   left: 50px
   top: 90px
 .list-shop-item
@@ -1147,9 +1150,9 @@ ul.catalog-filter-list
   flex-wrap: wrap
   justify-content: flex-start
 .catalog-item
-  width: 47%
+  width: 49%
   height: 421px
-  margin-bottom: 40px
+  margin-bottom: 30px
   background-size: cover
   background-repeat: no-repeat
   background-position: center
@@ -1170,7 +1173,7 @@ ul.catalog-filter-list
     font-size: 14px
     font-weight: normal
 .catalog-item:nth-of-type(odd)
-  margin-right: 3%
+  margin-right: 2%
 .catalog-docs-container
   margin-top: 33px
   margin-bottom: 61px
@@ -1401,6 +1404,7 @@ ul.catalog-filter-list
 .param-item:hover
   color: #fff
   text-decoration: none
+  background: #000
 .more-info-product
   .more-info-empty
     margin-bottom: 40px
