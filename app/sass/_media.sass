@@ -68,6 +68,8 @@
   .md-lead-button
     display: none
 @media screen and (max-width: 1180px)
+  .thumb-main-slider-item
+    height: 110px
   .more-info-price:after
     margin: 10px 0 20px
   .footer-info
@@ -86,8 +88,6 @@
     left: 20%
   .container
     max-width: 995px
-  .contacts-item:first-of-type
-    display: none
   .top-header-menu-container
     width: 40%
   .bottom-header-lead-toggle
@@ -155,6 +155,8 @@
   .main-about-us-dec-title
     display: none
 @media screen and (max-width: 992px)
+   .contacts-item:first-of-type
+    display: none
    .docs-list .owl-nav
     width: 100%
     left: 0
@@ -221,10 +223,18 @@
      order: 1
    .more-info-item:nth-of-type(3)
      order: 2
+     margin-bottom: 0
    .more-info-item:first-of-type
      order: 3
    .more-info
      margin-bottom: 10px
+   .more-info-product
+     margin-bottom: 0
+   .last-product-container
+     .title
+       margin-top: 0
+   .metro-about-us
+     margin-bottom: 50px
    .page
      .main-banner
        display: none
@@ -282,10 +292,13 @@
   .lead-button-item
     width: 100%
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-  /**/
+@media only screen and (max-width : 1180px)
+  .contacts-item a
+    white-space: pre
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+  .catalog-tab-container .catalog-tab-submenu
+    margin-left: 0
   .catalog-info .padding-container
     padding: 0 12px
   .catalog-tab
@@ -305,9 +318,13 @@
   .catalog-tab-submenu-item
     margin-right: 0
     margin-left: 0
+  .catalog-tab-submenu-item::before
+    content: '-'
+    margin-right: -5px
+    margin-left: 10px
   .catalog-tab-submenu .catalog-tab-submenu-item>a
-    font-weight: 400 !important
-    font-size: 12px !important
+    font-weight: 600 !important
+    font-size: 13px !important
   .catalog-tab .catalog-tab-item.active
     display: flex
     justify-content: space-between
@@ -315,6 +332,10 @@
     flex-wrap: wrap
     &>a
       border-bottom: 0
+  .catalog-tab .catalog-tab-item:not(.active)
+    a
+      padding-left: 10px
+      font-size: 14px
   .catalog-tab-item-button
     display: block
   .more-info-catalog
@@ -328,9 +349,41 @@
     flex-wrap: wrap
   .mobile-catalog-filter-item
     display: block
+  .mobile-catalog-filter-item.active
+    border: 1px solid #bfbfbf
+    background-color: #252525
+    .catalog-filter-name
+      color: #fff
+    .mobile-catalog-filter-button.active::before
+      content: ""
+      display: inline-block
+      width: 16px
+      height: 15px
+      background: url("../img/icons/close.png") no-repeat center
+  .more-info-catalog .more-info-title-dec
+    top: 105px
+  .more-info.more-info-catalog
+    margin-top: -70px
+    margin-bottom: 0
+    div.more-info-item
+      margin-bottom: 30px
+  .more-info-list-item
+    line-height: 22px
+  .catalogs .more-info-item:nth-of-type(2)
+    padding-left: 0
+  .lead-button-item
+    height: 59px
+    border-bottom: 0
+  .lead-button-text
+    margin-left: 18px
+  .more-info-subtitle
+    font-weight: bold
+  .page #main.catalogs
+    margin-bottom: 0
   .catalog-filter-item
     width: 100%
     margin-right: 0
+    margin-bottom: 10px
   .catalog-filter-item:not(.mobile-catalog-filter-item)
     display: none
   .product-container-item
@@ -415,6 +468,9 @@
     order: -3
     margin-top: 20px
 /* Small Devices, Tablets */
+@media screen and (max-width: 833px)
+  .main-our-categories-list-item
+    height: 250px
 @media only screen and (max-width : 800px)
   .mobile-main-our-categories
     .main-our-categories-list-item
@@ -434,7 +490,7 @@
     .main-our-categories-title
       a
         font-size: 11px
-        line-height: 18px
+        line-height: 16px
         color: #222
     .main-our-categories-list-item
       width: calc(100%/2.1)
@@ -462,21 +518,26 @@
       @include list-type-none
       li[role="presentation"]
         display: inline-block
-        margin-right: 10px
-        width: 10px
-        height: 10px
-        border-radius: 50%
-        background-color: #d1d1d1
+        button
+          color: transparent
+          display: inline-block
+          margin-right: 10px
+          width: 10px
+          height: 10px
+          border-radius: 50%
+          background-color: #d1d1d1
       li[role="presentation"].slick-active
-        background-color: #383838
+        button
+          background-color: #383838
   .product-main-slider-item
-    margin: 0 20px
+    margin: 0 5px
     height: 228px
   body .padding-container
     padding-left: 12px
     padding-right: 12px
   .page
     #main
+      margin-bottom: 45px
       margin-top: 45px
   .breadcrumbs
     display: flex
@@ -484,8 +545,9 @@
   .breadcrumbs-item a
     font-size: 12px
   .title
-    font-size: 22px
-    line-height: 27px
+    font-size: 24px
+    line-height: 30px
+    font-weight: 400
   .price-container
     margin-top: 30px
     .fullprice
@@ -510,6 +572,7 @@
     .main-banner
       padding-top: 25px
       padding-bottom: 25px
+      background-size: 100% 152.15px
     .mobile-main-banners
       margin-top: 20px
       .mobile-main-banners-item a
@@ -570,7 +633,8 @@
   .main #main
     margin-bottom: 17px
   .copyright
-    line-height: 17px
+    line-height: 18px
+    font-size: 12px
   #footer
     .footer-item
       margin-right: 0
