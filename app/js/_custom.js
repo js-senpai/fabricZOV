@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     $('.catalog-filter-item').click(function () {
        $(this).toggleClass('active').siblings().removeClass('active').find('.catalog-filter-list').fadeOut('slow');
-       $(this).find('.catalog-filter-list').fadeIn('slow');
+       $(this).find('.catalog-filter-list').fadeToggle('slow');
        $(this).find('.catalog-filter-button').toggleClass('active');
     });
 
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function() {
       $('.catalog-tab-item:not(.active)').fadeToggle('slow');
       $('.catalog-tab-submenu').fadeToggle('slow');
    });
-   $('.mobile-catalog-filter-button').click(function () {
+   $('.mobile-catalog-filter-item').click(function () {
       $(this).toggleClass('active');
       $('.catalog-filter-item:not(.mobile-catalog-filter-item)').fadeToggle('slow');
       $('.catalog-filter-bottom').toggleClass('active');

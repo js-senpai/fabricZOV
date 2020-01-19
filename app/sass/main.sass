@@ -76,7 +76,7 @@ img
   font-weight: 400
   margin-top: 10px
 .subtitle
-  font-weight: bold
+  font-weight: 400
   font-size: 14px
   color: #000
   text-transform: uppercase
@@ -133,6 +133,12 @@ img
   height: 74px
   background-color: #383838
   position: relative
+  .search-container
+    width: 100%
+    left: 0
+    bottom: -33px
+    .search-text
+      width: 94%
   .mobile-header-item:nth-of-type(2)
     width: 50%
   .mobile-header-item
@@ -1203,9 +1209,10 @@ ul.catalog-filter-list
   .docs-title
     display: block
     text-align: center
-    margin-bottom: 5px
     font-size: 12px
     font-weight: bold
+  .docs-download
+    text-transform: lowercase
   &>a
     display: flex
     justify-content: center
@@ -1221,7 +1228,7 @@ ul.catalog-filter-list
       width: 9px
       height: 9px
       background: url('../img/icons/download.svg') no-repeat center
-      background-size: cover
+      background-size: 100%
 //Pagination
 .pagination
   @include list-type-none
