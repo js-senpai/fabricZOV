@@ -148,7 +148,6 @@ document.addEventListener("DOMContentLoaded", function() {
       $('.catalog-tab-submenu').fadeToggle('slow');
    });
    $('.mobile-catalog-filter-item').click(function () {
-      $(this).toggleClass('active');
       $('.catalog-filter-item:not(.mobile-catalog-filter-item)').fadeToggle('slow');
       $('.catalog-filter-bottom').toggleClass('active');
    });
