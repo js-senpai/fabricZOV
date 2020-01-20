@@ -154,8 +154,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     });
-   $('.catalog-tab-item-button').click(function () {
-      $(this).toggleClass('active');
+   $('.catalog-tab-item.active').click(function () {
+      $(this).find('.catalog-tab-item-button').toggleClass('active');
       $('.catalog-tab-item:not(.active)').fadeToggle('slow');
       $('.catalog-tab-submenu').fadeToggle('slow');
    });
