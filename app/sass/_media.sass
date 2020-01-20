@@ -62,7 +62,7 @@
     .main-our-categories-list-item:nth-child(5),.main-our-categories-list-item:nth-child(6),.main-our-categories-list-item:nth-child(7),.main-our-categories-list-item:nth-child(8)
       margin-bottom: 65px
   .main
-    .more-info-item:nth-of-type(3)
+    .more-info-item:nth-of-type(3),.more-info-item:nth-of-type(2)
       .more
         display: none
   .md-lead-button
@@ -118,7 +118,7 @@
   .more-info-item:nth-of-type(1)
     width: 20%
   .main
-    .more-info-item:nth-of-type(3)
+    .more-info-item:nth-of-type(2)
       .more
         display: block
         margin-top: 30px
@@ -159,6 +159,14 @@
   .main-advantages-text
     width: 80%
 @media screen and (max-width: 992px)
+   .main
+     .more-info-item:nth-of-type(3)
+       .more
+         display: block
+         margin-top: 30px
+     .more-info-item:nth-of-type(2)
+       .more
+         display: none
    .contacts-item:first-of-type
     display: none
    .docs-list .owl-nav
@@ -280,8 +288,10 @@
      padding-left: 0
      padding-right: 0
      font-size: 12px
+   .metro
+     font-size: 14px
    .metro:before
-     margin-right: 2px
+     margin-right: 11px
    .catalog-docs-container
      .flex-container
        flex-wrap: wrap

@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     //toggle function
     function toggleElement(parent,child){
-        $(parent).click(function(){
+        $(parent).click(function(e){
+            e.preventDefault();
             $(child).fadeToggle('slow');
         });
     }
@@ -18,7 +19,18 @@ document.addEventListener("DOMContentLoaded", function() {
         $('.bottom-header-cat-menu-item.active').removeClass('active');
     });
     //Переключение поиска по сайту
-    toggleElement('.search-button','.search-container');
+    $('.search-button').click(function () {
+        $(this).toggleClass('active');
+        if($(this).hasClass('active')){
+            $('.search-container').fadeIn('slow');
+        }else{
+            $('.search-container').fadeOut('slow');
+        }
+
+    });
+    $('.search-submit').click(function () {
+       $('.search-container').fadeOut('slow');
+    });
     $(document).mouseup(function (e) {
         const search_container = $(".search-container"),
               catalog_filter =  $('.catalog-filter-item'),
