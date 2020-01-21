@@ -180,8 +180,11 @@ document.addEventListener("DOMContentLoaded", function() {
             0:{
                 items: 3
             },
-            800:{
+            690:{
                 items: 3
+            },
+            700:{
+                items: 5
             },
             900: {
                 items: 5
