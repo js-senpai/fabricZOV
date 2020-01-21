@@ -106,6 +106,12 @@ document.addEventListener("DOMContentLoaded", function() {
        $(this).find('.sort-date-btn').toggleClass('active');
        $(this).find('.sort-date-list').fadeToggle('slow');
     });
+    $('.sort-date-list .sort-date-item').click(function () {
+        let currentText = $(this).text(),
+            oldText = $('.sort-date-current').text();
+        $('.sort-date-current').text(currentText);
+        $(this).text(oldText);
+    });
     $('.main-banner-list-item').hover(
         function () {
             $(this).addClass('active').siblings().removeClass('active');
