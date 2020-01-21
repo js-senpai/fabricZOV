@@ -169,6 +169,11 @@
   .sort-date-list
     right: -90px
 @media screen and (max-width: 992px)
+  .main-banner-top
+    margin-bottom: 0
+  .main-banner.active
+   &>.flex-container
+     padding-bottom: 30px
   .catalog-filter-bottom-item.flex-container
      display: none
   .catalog-filter-bottom
@@ -200,8 +205,10 @@
     margin-top: 50px
   .main-banner
     height: auto
-    padding-top: 28px
+    padding-top: 30px
     padding-bottom: 30px
+    .flex-container
+      justify-content: center
   .mobile-sales-btn
     font-size: 12px
   .main-banner-top
@@ -463,6 +470,7 @@
     text-align: left
     padding-top: 4px
     margin-bottom: 23px
+    width: 100%
   .more-info-item:nth-of-type(2)
     .more-info-title
       width: 100%
@@ -507,6 +515,9 @@
   .main-our-categories-list-item
     height: 250px
 @media only screen and (max-width : 800px)
+  .main-banner.active
+    &>.flex-container
+      padding-bottom: 0
   .mobile-main-our-categories
     .main-our-categories-list-item
       width: 231px
@@ -605,11 +616,12 @@
       .title
         margin-top: 0
     .main-banner
-      padding-top: 25px
-      padding-bottom: 25px
-      background-size: 100% 152.15px
-    .mobile-main-banners
-      margin-top: 20px
+      padding-top: 0
+      padding-bottom: 0
+      background-size: 100% 157px
+    .main-banner>.flex-container
+      height: 157px
+      justify-content: center
       .mobile-main-banners-item a
         padding-left: 10px
         padding-right: 10px
