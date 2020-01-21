@@ -93,10 +93,10 @@ document.addEventListener("DOMContentLoaded", function() {
         $(this).prev('.mobile-header-submenu').fadeToggle('slow');
     });
 
-    $('.catalog-filter-item').click(function () {
-       $(this).toggleClass('active').siblings().removeClass('active').find('.catalog-filter-list').fadeOut('slow');
-       $(this).find('.catalog-filter-list').fadeToggle('slow');
-       $(this).find('.catalog-filter-button').toggleClass('active');
+    $('.catalog-filter-header').click(function () {
+       $(this).parent().toggleClass('active').siblings().removeClass('active').find('.catalog-filter-list').fadeOut('slow');
+       $(this).parent().find('.catalog-filter-list').fadeToggle('slow');
+       $(this).parent().find('.catalog-filter-button').toggleClass('active');
     });
 
     $('.catalog-filter-item.active').click(function () {
