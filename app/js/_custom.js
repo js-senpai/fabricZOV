@@ -256,6 +256,14 @@ document.addEventListener("DOMContentLoaded", function() {
             $(this).prev('a').css({'background': 'none'});
         }
     );
+    $('.main-our-categories-list-item').hover(
+        function () {
+            $(this).find('>a').css({'background': '#0000007a'});
+        },
+        function () {
+            $(this).find('>a').css({'background': 'none'});
+        }
+    );
     $('.metro-adress-container').hover(
         function () {
             $(this).prev('a').css({'background': '#0000007a'});
