@@ -560,8 +560,6 @@
   .catalog
     flex-wrap: wrap
     .catalog-item
-      margin-right: 0
-      width: 100%
       height: 198px
   .breadcrumbs
     flex-wrap: wrap
@@ -679,7 +677,7 @@
       .more
         margin-top: 1px
   .main-advantages-item
-    width: calc(100%/2)
+    width: calc(100%/3)
   .main-advantages-title
     font-size: 12px
     margin-bottom: 0
@@ -738,6 +736,14 @@
   .page .main-about-us
     margin-top: 0
 /* Extra Small Devices, Phones */
+@media screen and (max-width: 600px)
+  .main-advantages-item
+    width: calc(100%/2)
+  .catalog
+    flex-wrap: wrap
+    .catalog-item
+      margin-right: 0
+      width: 100%
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
   .main-our-categories-list,.main-advantages-list
